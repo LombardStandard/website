@@ -51,8 +51,7 @@
   <div class="relative z-50 px-4 sm:px-8 md:px-12">
     <div class="flex flex-row justify-between items-center py-8 relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto md:border-b md:border-gray-300 border-b-0">
       <div class="flex">
-        <a href="https://lombardstandard.com/" target="_self"
->
+        <a href="https://lombardstandard.com/" target="_self">
           <svg class="h-8 w-28">
             <use href="img/svgs/icon-lombst.svg#logo-ls-dark" />
           </svg>
@@ -66,17 +65,13 @@
         </button>
       </div>
       <nav class="hidden md:flex space-x-8">
-        <a href="https://lombardstandard.com/for-buyers" target="_self"
- class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">For buyers</a>
-        <a href="https://lombardstandard.com/for-sellers" target="_self"
- class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">For sellers</a>
-        <a href="https://lombardstandard.com/about" target="_self"
- class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">About</a>
+        <a href="https://lombardstandard.com/for-buyers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">For buyers</a>
+        <a href="https://lombardstandard.com/for-sellers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">For sellers</a>
+        <a href="https://lombardstandard.com/about" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">About</a>
       </nav>
       <div class="hidden md:inline">
-        <a href="#" target="_self"
- class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-700 px-3 py-2 uppercase">BECOME A SELLER
-        </a>
+        <div onclick="overlayOn()" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-700 px-3 py-2 uppercase cursor-pointer">Account request
+        </div>
       </div>
     </div>
     <!-- Mobile menu -->
@@ -84,19 +79,22 @@
       <div class="rounded-xl bg-gray-100 overflow-hidden max-w-full md:max-w-5xl lg:max-w-7xl mx-auto ">
         <div class="p-6">
           <nav class="grid grid-cols-1 gap-6 place-items-center">
-            <a href="https://lombardstandard.com/for-buyers" target="_self"
- class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">For buyers
+            <a href="https://lombardstandard.com/for-buyers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">For buyers
             </a>
-            <a href="https://lombardstandard.com/for-sellers" target="_self"
- class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">For sellers
+            <a href="https://lombardstandard.com/for-sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">For sellers
             </a>
-            <a href="https://lombardstandard.com/about" target="_self"
- class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400">About
+            <a href="https://lombardstandard.com/about" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400">About
             </a>
-            <a href="#" target="_self"
- class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full">BECOME A SELLER
-            </a>
+            <button onclick="openRequest()" id="requestButton" class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Account request
+            </button>
           </nav>
+          <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
+            <button onclick="closeRequest()" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
+              <svg class="h-5 w-5 mr-2 text-white inline self-center">
+                <use href="img/svgs/outline-close.svg#outline-close" />
+              </svg>close</button>
+            <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full" style="height:540px"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -129,9 +127,11 @@
       </div>
       <div>
         <div id="Privacy" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-gray-100 text-gray-900 taext-sm">
-          <div id="copyPrivacy" class="text-sm font-bold font-mono text-white hover:bg-blue-900 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 "><svg class="h-5 w-5 mr-2 text-white inline self-center">
+          <div id="copyPrivacy" class="text-sm font-bold font-mono text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 ">
+            <svg class="h-5 w-5 mr-2 text-white inline self-center">
               <use href="img/svgs/solid-clipboard.svg#solid-clipboard" />
-            </svg>copy</div>
+            </svg>copy
+          </div>
 
           <br><br>
           <div class="text-center font-bold text-xl mt-4 ">Privacy Policy</div><br><br>
@@ -206,7 +206,7 @@
           </ul>
         </div>
         <div id="Terms" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-gray-100 text-gray-900 taext-sm">
-          <div id="copyTerms" class="text-sm font-bold font-mono text-white hover:bg-blue-900 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 "><svg class="h-5 w-5 mr-2 text-white inline self-center">
+          <div id="copyTerms" class="text-sm font-bold font-mono text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 "><svg class="h-5 w-5 mr-2 text-white inline self-center">
               <use href="img/svgs/solid-clipboard.svg#solid-clipboard" />
             </svg>copy</div>
 
@@ -271,6 +271,24 @@
           </ul>
 
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="fixed z-50 inset-0 overflow-y-auto md:block hidden transition-all opacity-0 pointer-events-none">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center block">
+      <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity"></div>
+      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+      <div>
+        <div class="relative text-center bg-white text-blue-700 text-sm font-bold p-3 rounded-xl mt-20 mb-6 uppercase">Fill in your details, we'll be in touch.</div>
+        <div id="requestDesktop" class="relative self-center bg-gray-300 rounded-xl max-w-3/4 pt-6 px-6 mx-auto">
+          <button onclick="overlayOff()" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
+            <svg class="h-5 w-5 mr-2 text-white inline self-center">
+              <use href="img/svgs/outline-close.svg#outline-close" />
+            </svg>close</button>
+          <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full" style="height:540px"></iframe>
         </div>
       </div>
     </div>
@@ -350,7 +368,7 @@
         <div class="flex flex-row space-x-3 mt-8 md:mt-0 md:order-1 text-gray-400 text-xs">
           <p>© <span id=copyright></span> Lombard Standard</p>
           <p>|</p>
-          <a href="https://rics.org/" target="_self" class="hover:text-blue-700 cursor-pointer transition-all">Regulated by RICS</a>
+          <a href="https://rics.org/" target="_blank" class="hover:text-blue-700 cursor-pointer transition-all">Regulated by RICS</a>
           <p>|</p>
           <a href="https://lombardstandard.com/legal" target="_self" class="hover:text-blue-700 cursor-pointer transition-all">Legal</a>
         </div>
@@ -389,12 +407,8 @@
   </style>
 
   <!-- JavaScript -->
-  <script src="js/script.js"></script>
-  <script>
-    var d = new Date();
-    var n = d.getFullYear();
-    document.getElementById("copyright").innerHTML = n;
-
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -433,19 +447,31 @@
     }
   </script>
   <script type="text/javascript">
-    _linkedin_partner_id = "3365265";
-    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-  </script>
-  <script type="text/javascript">
-    (function() {
-      var s = document.getElementsByTagName("script")[0];
-      var b = document.createElement("script");
-      b.type = "text/javascript";
-      b.async = true;
-      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-      s.parentNode.insertBefore(b, s);
-    })();
+    function overlayOn() {
+      document.getElementById("overlay").style.opacity = 1;
+      document.getElementById("overlay").style.pointerEvents = "auto";
+    }
+
+    function overlayOff() {
+      document.getElementById("overlay").style.opacity = 0;
+      document.getElementById("overlay").style.pointerEvents = "none";
+    }
+
+    function openRequest() {
+      document.getElementById("requestMobile").style.display = "block";
+      document.getElementById("requestButton").style.background = "transparent";
+      document.getElementById("requestButton").style.color = "#1D4ED8";
+      document.getElementById("requestButton").style.pointerEvents = "none";
+      document.getElementById("requestButton").innerHTML = "Fill in your details, we'll be in touch.";
+    }
+
+    function closeRequest() {
+      document.getElementById("requestMobile").style.display = "none";
+      document.getElementById("requestButton").style.background = "#1D4ED8";
+      document.getElementById("requestButton").style.color = "#ffffff";
+      document.getElementById("requestButton").style.pointerEvents = "auto";
+      document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
+    }
   </script>
   <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif" />
