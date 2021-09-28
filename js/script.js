@@ -16,7 +16,7 @@ document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("requestButton").style.background = "#1D4ED8";
     document.getElementById("requestButton").style.color = "#ffffff";
     document.getElementById("requestButton").style.pointerEvents = "auto";
-    document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+    document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
   }
 });
 
@@ -30,7 +30,7 @@ function closeMenuResize() {
   document.getElementById("requestButton").style.background = "#1D4ED8";
   document.getElementById("requestButton").style.color = "#ffffff";
   document.getElementById("requestButton").style.pointerEvents = "auto";
-  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+  document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
 }
 
 _linkedin_partner_id = "3365265";
