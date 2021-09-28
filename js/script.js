@@ -31,6 +31,8 @@ function closeMenuResize() {
   document.getElementById("requestButton").style.color = "#ffffff";
   document.getElementById("requestButton").style.pointerEvents = "auto";
   document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
+  document.getElementById("overlay").style.opacity = 0;
+  document.getElementById("overlay").style.pointerEvents = "none";
 }
 
 _linkedin_partner_id = "3365265";
