@@ -13,10 +13,11 @@ document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("mobileMenu").style.opacity = 0;
     document.getElementById("mobileMenu").style.pointerEvents = "none";
     document.getElementById("requestMobile").style.display = "none";
-    document.getElementById("requestButton").style.opacity = 1;
+    document.getElementById("requestButton").style.background = "#1D4ED8";
+    document.getElementById("requestButton").style.color = "#ffffff";
     document.getElementById("requestButton").style.pointerEvents = "auto";
+    document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
   }
-  document.getElementById("requestMobile").style.display = "none";
 });
 
 window.onresize = closeMenuResize;
@@ -26,8 +27,10 @@ function closeMenuResize() {
   document.getElementById("mobileMenu").style.opacity = 0;
   document.getElementById("mobileMenu").style.pointerEvents = "none";
   document.getElementById("requestMobile").style.display = "none";
-  document.getElementById("requestButton").style.opacity = 1;
+  document.getElementById("requestButton").style.background = "#1D4ED8";
+  document.getElementById("requestButton").style.color = "#ffffff";
   document.getElementById("requestButton").style.pointerEvents = "auto";
+  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
 }
 
 _linkedin_partner_id = "3365265";
