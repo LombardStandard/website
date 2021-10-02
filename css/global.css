@@ -13,6 +13,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
+button {
+  border: none;
+  outline: none !important;
+}
+
 a,
 button {
   cursor: pointer;
@@ -31,18 +37,6 @@ button:focus {
   outline: none;
 }
 
-button {
-  border: none;
-  outline: none !important;
-}
-
-input,
-textarea {
-  border: 0;
-  outline: none;
-  resize: none;
-}
-
 h1,
 h2,
 h3,
@@ -56,6 +50,20 @@ h6 {
 
 html {
   scroll-behavior:smooth
+}
+
+img {
+  color: #111827;
+  font-size: 10px;
+  font-style: italic;
+  font-family: "Roboto Mono", monospace;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+  resize: none;
 }
 
 /* Tailwind custom */
@@ -98,7 +106,6 @@ html {
 .text-teal-900 {
   color: #134e4a;
 }
-
 .bg-teal-50 {
   background: #f0fdfa;
 }
