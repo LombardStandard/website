@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -57,7 +57,7 @@ img {
   background: #E5E7EB;
   font-size: 10px;
   font-style: italic;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 input,
@@ -70,11 +70,11 @@ textarea {
 /* Tailwind custom */
 
 .font-sans {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .font-mono {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .text-teal-50 {
@@ -173,7 +173,7 @@ textarea {
   letter-spacing: -0.025em !important;
   margin-left: 24px !important;
   user-select: none !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 @media only screen and (max-width: 640px) {
