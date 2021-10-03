@@ -32,6 +32,16 @@ document.addEventListener('mouseup', function(e) {
     container2.style.opacity = 0;
    container2.style.pointerEvents = "none";
     }
+  document.getElementById("user").addEventListener("click", function () {
+  var userMenuOpacity = document.getElementById("userMenu").style.opacity;
+  if (userMenuOpacity == 0) {
+    document.getElementById("userMenu").style.opacity = 1;
+    document.getElementById("userMenu").style.pointerEvents = "auto";
+  } else {
+    document.getElementById("userMenu").style.opacity = 0;
+    document.getElementById("userMenu").style.pointerEvents = "none";
+  }
+});
 
 });
 
@@ -53,16 +63,7 @@ document.getElementById("openMenu").addEventListener("click", function () {
   }
 });
 
-document.getElementById("user").addEventListener("click", function () {
-  var userMenuOpacity = document.getElementById("userMenu").style.opacity;
-  if (userMenuOpacity == 0) {
-    document.getElementById("userMenu").style.opacity = 1;
-    document.getElementById("userMenu").style.pointerEvents = "auto";
-  } else {
-    document.getElementById("userMenu").style.opacity = 0;
-    document.getElementById("userMenu").style.pointerEvents = "none";
-  }
-});
+
 
 document.getElementById("requestButton").addEventListener("click", function () {
   document.getElementById("requestMobile").style.display = "block";
