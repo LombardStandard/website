@@ -44,6 +44,8 @@ function closeMenuResize() {
   document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
   document.getElementById("overlay").style.opacity = 0;
   document.getElementById("overlay").style.pointerEvents = "none";
+  document.getElementById("userMenu").style.opacity = 0;
+  document.getElementById("userMenu").style.pointerEvents = "none";
 }
 
 _linkedin_partner_id = "3365265";
