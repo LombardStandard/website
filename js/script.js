@@ -41,7 +41,7 @@ function closeMenuResize() {
   document.getElementById("requestButton").style.background = "#D1D5DB";
   document.getElementById("requestButton").style.color = "#111827";
   document.getElementById("requestButton").style.pointerEvents = "auto";
-  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNt";
+  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
   document.getElementById("overlay").style.opacity = 0;
   document.getElementById("overlay").style.pointerEvents = "none";
 }
