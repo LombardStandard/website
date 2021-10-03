@@ -93,7 +93,10 @@
         <a href="for-sellers.html" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">For sellers</a>
         <a href="about.html" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">About</a>
       </nav>
-      <div class="hidden md:inline">
+      <div class="hidden md:inline flex items-center">
+        <svg class="h-6 w-6 mr-2 text-blue-700 self-center">
+                <use href="img/svgs/solid-user-circle.svg#solid-user-circle" />
+              </svg>
         <div onclick="overlayOn()" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-700 px-3 py-2 uppercase cursor-pointer">Account request
         </div>
       </div>
@@ -110,7 +113,9 @@
             </a>
             <a href="about.html" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">About
             </a>
-            <button onclick="openRequest()" id="requestButton" class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Account request
+            <a href="#" class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in
+            </a>
+            <button onclick="openRequest()" id="requestButton" class="p-3 rounded-lg bg-transparent hover:bg-blue-700 hover:text-white border border-solid border-blue-700  transition-all tracking-tight transition-all text-sm font-extrabold text-blue-700 box-border uppercase text-center w-full opacity-1">Account request
             </button>
           </nav>
           <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
@@ -141,7 +146,7 @@
             <p class="mt-4 text-xl sm:text-2xl text-gray-400 text-center font-medium">A global deal-sourcing platform for commercial real estate firms.</p>
           </blockquote>
           <div class="z-100 mt-12 h-14 w-full lg:max-w-2xl md:max-w-lg sm:max-w-md overflow-visible">
-            <embed height="300" allowtransparency="true" class="relative w-full z-10" src="https://app.lombardstandard.com/geocoder-iframe/"></embed>
+            <embed height="300" allowtransparency="true" class="relative w-full z-10" src="https://app.lombardstandard.com/geocoder_widget/"></embed>
           </div>
         </div>
       </div>
@@ -259,7 +264,7 @@
             <h2 class="text-4xl font-extrabold">Become a seller</h2>
             <p class="text-gray-400 mt-1 text-xl font-medium">And increase your lead generation.</p>
             <div class="mt-6">
-              <a href="for-sellers.html" target="_self" class="inline-flex px-3 py-2 text-sm font-bold rounded-lg shadow-sm text-white bg-blue-700 hover:bg-blue-800 tracking-tight transition-all">
+              <a href="for-sellers.html" target="_self" class="inline-flex px-3 py-2 text-sm font-bold rounded-lg text-white bg-blue-700 hover:bg-blue-800 tracking-tight transition-all">
                 READ MORE
               </a>
             </div>
@@ -392,8 +397,8 @@
 
     function closeRequest() {
       document.getElementById("requestMobile").style.display = "none";
-      document.getElementById("requestButton").style.background = "#1D4ED8";
-      document.getElementById("requestButton").style.color = "#ffffff";
+      document.getElementById("requestButton").style.background = "transparent";
+      document.getElementById("requestButton").style.color = "#1D4ED8";
       document.getElementById("requestButton").style.pointerEvents = "auto";
       document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
     }
