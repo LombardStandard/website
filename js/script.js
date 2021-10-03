@@ -16,7 +16,7 @@ document.getElementById("overlayOff").addEventListener("click", function () {
   document.getElementById("overlay").style.pointerEvents = "none";
 });
 
-document.addEventListener("mouseup", function (e) {
+document.addEventListener("click", function (e) {
   var container1 = document.getElementById("userMenu");
   if (!container1.contains(e.target)) {
     container1.style.opacity = 0;
@@ -34,7 +34,7 @@ document.addEventListener("mouseup", function (e) {
   });
 });
 
-document.addEventListener("mouseup", function (e) {
+document.addEventListener("click", function (e) {
   var container2 = document.getElementById("mobileMenu");
   if (!container2.contains(e.target)) {
     container2.style.transform = "scale(0.9,0.9)";
