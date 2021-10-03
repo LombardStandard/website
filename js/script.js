@@ -17,10 +17,20 @@ document.getElementById("overlayOff").addEventListener("click", function () {
 });
 
 document.addEventListener('mouseup', function(e) {
-    var container = document.getElementById('userMenu');
-    if (container.contains(e.target)) {
-        container.style.opacity = 0;
-       container.style.pointerEvents = "none";
+    var container1 = document.getElementById('userMenu');
+    if (!container1.contains(e.target)) {
+        container1.style.opacity = 0;
+       container1.style.pointerEvents = "none"; 
+    }
+});
+
+
+document.addEventListener('mouseup', function(e) {
+   var container2 = document.getElementById('mobileMenu');
+    if (!container2.contains(e.target)) {
+         container2.style.transform = "scale(0.9,0.9)";
+    container2.style.opacity = 0;
+   container2.style.pointerEvents = "none";
     }
 
 });
