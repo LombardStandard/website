@@ -2,6 +2,20 @@ var d = new Date();
 var n = d.getFullYear();
 document.getElementById("copyright").innerHTML = n;
 
+document.getElementById("overlayOn").addEventListener("click", function () {
+  document.getElementById("userMenu").style.opacity = 0;
+  document.getElementById("userMenu").style.pointerEvents = "none";
+  setTimeout(function () {
+    document.getElementById("overlay").style.opacity = 1;
+    document.getElementById("overlay").style.pointerEvents = "auto";
+  }, 500);
+});
+
+document.getElementById("overlayOff").addEventListener("click", function () {
+  document.getElementById("overlay").style.opacity = 0;
+  document.getElementById("overlay").style.pointerEvents = "none";
+});
+
 document.getElementById("openMenu").addEventListener("click", function () {
   var mobileMenu = document.getElementById("mobileMenu").style.opacity;
   if (mobileMenu == 0) {
@@ -31,6 +45,22 @@ document.getElementById("user").addEventListener("click", function () {
   }
 });
 
+document.getElementById("requestButton").addEventListener("click", function () {
+  document.getElementById("requestMobile").style.display = "block";
+  document.getElementById("requestButton").style.background = "transparent";
+  document.getElementById("requestButton").style.color = "#1D4ED8";
+  document.getElementById("requestButton").style.pointerEvents = "none";
+  document.getElementById("requestButton").innerHTML =
+    "Fill in your details, we'll be in touch.";
+});
+
+document.getElementById("closeRequest").addEventListener("click", function () {
+  document.getElementById("requestMobile").style.display = "none";
+  document.getElementById("requestButton").style.background = "#D1D5DB";
+  document.getElementById("requestButton").style.color = "#111827";
+  document.getElementById("requestButton").style.pointerEvents = "auto";
+  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+});
 window.onresize = closeMenuResize;
 
 function closeMenuResize() {
