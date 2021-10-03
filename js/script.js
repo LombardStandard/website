@@ -13,10 +13,21 @@ document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("mobileMenu").style.opacity = 0;
     document.getElementById("mobileMenu").style.pointerEvents = "none";
     document.getElementById("requestMobile").style.display = "none";
-    document.getElementById("requestButton").style.background = "transparent";
-    document.getElementById("requestButton").style.color = "#1D4ED8";
+    document.getElementById("requestButton").style.background = "#D1D5DB";
+    document.getElementById("requestButton").style.color = "#111827";
     document.getElementById("requestButton").style.pointerEvents = "auto";
-    document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
+    document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+  }
+});
+
+document.getElementById("user").addEventListener("click", function () {
+  var userMenuOpacity = document.getElementById("userMenu").style.opacity;
+  if (userMenuOpacity == 0) {
+    document.getElementById("userMenu").style.opacity = 1;
+    document.getElementById("userMenu").style.pointerEvents = "auto";
+  } else {
+    document.getElementById("userMenu").style.opacity = 0;
+    document.getElementById("userMenu").style.pointerEvents = "none";
   }
 });
 
@@ -27,10 +38,10 @@ function closeMenuResize() {
   document.getElementById("mobileMenu").style.opacity = 0;
   document.getElementById("mobileMenu").style.pointerEvents = "none";
   document.getElementById("requestMobile").style.display = "none";
-  document.getElementById("requestButton").style.background = "transparent";
-  document.getElementById("requestButton").style.color = "#1D4ED8";
+  document.getElementById("requestButton").style.background = "#D1D5DB";
+  document.getElementById("requestButton").style.color = "#111827";
   document.getElementById("requestButton").style.pointerEvents = "auto";
-  document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
+  document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNt";
   document.getElementById("overlay").style.opacity = 0;
   document.getElementById("overlay").style.pointerEvents = "none";
 }
