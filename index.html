@@ -94,7 +94,7 @@
         <a href="about.html" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">About</a>
       </nav>
       <div id="user" class="hidden md:flex flex-col items-center cursor-pointer">
-        <svg class="h-9 w-9 text-blue-700 self-center">
+        <svg class="h-9 w-9 text-blue-700 self-center hover:text-blue-800">
           <use href="img/svgs/solid-user-circle.svg#solid-user-circle" />
         </svg>
       </div>
@@ -113,11 +113,11 @@
             </a>
             <a href="#" class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in
             </a>
-            <button onclick="openRequest()" id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Request an account
+            <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Request an account
             </button>
           </nav>
           <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
-            <button onclick="closeRequest()" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
+            <button id="closeRequest" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
               <svg class="h-5 w-5 mr-2 text-white inline self-center">
                 <use href="img/svgs/outline-close.svg#outline-close" />
               </svg>close</button>
@@ -134,7 +134,7 @@
         <div href="#" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 hover:bg-gray-100 mb-3 hover:text-blue-700 rounded-md cursor-pointer text-left">Log in
         </div>
         <div class="h-px border-b border-gray-300"></div>
-        <div onclick="overlayOn()" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Request an account
+        <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Request an account
         </div>
       </div>
     </div>
@@ -291,8 +291,8 @@
       <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
       <div>
         <div class="relative text-center bg-white text-gray-900 text-base p-3 rounded-xl mt-20 mb-6 ">Fill in your details, we'll be in touch.</div>
-        <div id="requestDesktop" class="relative self-center bg-gray-300 rounded-xl max-w-3/4 pt-6 px-6 mx-auto">
-          <button onclick="overlayOff()" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
+        <div class="relative self-center bg-gray-300 rounded-xl max-w-3/4 pt-6 px-6 mx-auto">
+          <button id="overlayOff" class="text-sm font-bold font-mono text-white hover:bg-gray-500 text-right cursor-pointer rounded-md transition-all float-right bg-gray-400 mx-auto px-3 py-1">
             <svg class="h-5 w-5 mr-2 text-white inline self-center">
               <use href="img/svgs/outline-close.svg#outline-close" />
             </svg>close</button>
@@ -386,33 +386,6 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript">
-    function overlayOn() {
-      document.getElementById("overlay").style.opacity = 1;
-      document.getElementById("overlay").style.pointerEvents = "auto";
-    }
-
-    function overlayOff() {
-      document.getElementById("overlay").style.opacity = 0;
-      document.getElementById("overlay").style.pointerEvents = "none";
-    }
-
-    function openRequest() {
-      document.getElementById("requestMobile").style.display = "block";
-      document.getElementById("requestButton").style.background = "transparent";
-      document.getElementById("requestButton").style.color = "#1D4ED8";
-      document.getElementById("requestButton").style.pointerEvents = "none";
-      document.getElementById("requestButton").innerHTML = "Fill in your details, we'll be in touch.";
-    }
-
-    function closeRequest() {
-      document.getElementById("requestMobile").style.display = "none";
-      document.getElementById("requestButton").style.background = "#D1D5DB";
-      document.getElementById("requestButton").style.color = "#111827";
-      document.getElementById("requestButton").style.pointerEvents = "auto";
-      document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
-    }
-  </script>
   <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif" />
   </noscript>
