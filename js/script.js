@@ -13,8 +13,8 @@ document.getElementById("openMenu").addEventListener("click", function () {
     document.getElementById("mobileMenu").style.opacity = 0;
     document.getElementById("mobileMenu").style.pointerEvents = "none";
     document.getElementById("requestMobile").style.display = "none";
-    document.getElementById("requestButton").style.background = "#1D4ED8";
-    document.getElementById("requestButton").style.color = "#ffffff";
+    document.getElementById("requestButton").style.background = "transparent";
+    document.getElementById("requestButton").style.color = "#1D4ED8";
     document.getElementById("requestButton").style.pointerEvents = "auto";
     document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
   }
@@ -27,23 +27,22 @@ function closeMenuResize() {
   document.getElementById("mobileMenu").style.opacity = 0;
   document.getElementById("mobileMenu").style.pointerEvents = "none";
   document.getElementById("requestMobile").style.display = "none";
-  document.getElementById("requestButton").style.background = "#1D4ED8";
-  document.getElementById("requestButton").style.color = "#ffffff";
+  document.getElementById("requestButton").style.background = "transparent";
+  document.getElementById("requestButton").style.color = "#1D4ED8";
   document.getElementById("requestButton").style.pointerEvents = "auto";
   document.getElementById("requestButton").innerHTML = "ACCOUNT REQUEST";
   document.getElementById("overlay").style.opacity = 0;
   document.getElementById("overlay").style.pointerEvents = "none";
 }
 
-
 _linkedin_partner_id = "3365265";
- window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
- window._linkedin_data_partner_ids.push(_linkedin_partner_id);
- (function () {
-   var s = document.getElementsByTagName("script")[0];
-   var b = document.createElement("script");
-   b.type = "text/javascript";
-   b.async = true;
-   b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-   s.parentNode.insertBefore(b, s);
- })();
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+(function () {
+  var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript";
+  b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);
+})();
