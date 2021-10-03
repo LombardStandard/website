@@ -16,6 +16,15 @@ document.getElementById("overlayOff").addEventListener("click", function () {
   document.getElementById("overlay").style.pointerEvents = "none";
 });
 
+document.addEventListener('mouseup', function(e) {
+    var container = document.getElementById('userMenu');
+    if (container.contains(e.target)) {
+        container.style.opacity = 0;
+       container.style.pointerEvents = "none";
+    }
+
+});
+
 document.getElementById("openMenu").addEventListener("click", function () {
   var mobileMenu = document.getElementById("mobileMenu").style.opacity;
   if (mobileMenu == 0) {
