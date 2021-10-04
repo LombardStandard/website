@@ -120,7 +120,7 @@
     <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto px-12">
       <div class="text-center flex flex-col justify-center items-center">
         <h2 class="text-5xl font-extrabold text-blue-700 tracking-tight">Our mission</h2>
-        <p class="relative mt-6 text-xl text-gray-900 max-w-xl ">Lombard Standard isa a commercial real estate information marketplace designed to match buyers and sellers with minimum efforts and maximum confidentiality.</p>
+        <p class="relative mt-6 text-xl text-gray-900 max-w-xl ">Lombard Standard is a commercial real estate information marketplace designed to match buyers and sellers with minimum efforts and maximum confidentiality.</p>
       </div>
     </div>
   </div>
@@ -411,31 +411,7 @@
 
   <!-- JavaScript -->
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript">
-    document.getElementById("activeMenu").classList.remove("text-gray-400")
-    document.getElementById("activeMenu").classList.add("text-blue-700")
-    document.getElementById("activeMenu").classList.add("pointer-events-none")
-    document.getElementById("activeMenuMobile").classList.remove("text-gray-400")
-    document.getElementById("activeMenuMobile").classList.add("text-blue-700")
-    document.getElementById("activeMenuMobile").classList.add("pointer-events-none")
-    
-    document.addEventListener("mouseup", function(e) {
-      var container1 = document.getElementById("userMenu");
-      if (!container1.contains(e.target)) {
-        container1.style.opacity = 0;
-        container1.style.pointerEvents = "none";
-      }
-      document.getElementById("user").addEventListener("click", function() {
-        var userMenuOpacity = document.getElementById("userMenu").style.opacity;
-        if (userMenuOpacity == 0) {
-          document.getElementById("userMenu").style.opacity = 1;
-          document.getElementById("userMenu").style.pointerEvents = "auto";
-        } else {
-          document.getElementById("userMenu").style.opacity = 0;
-          document.getElementById("userMenu").style.pointerEvents = "none";
-        }
-      });
-    });
+  <script type="text/javascript">    
     document.addEventListener("mouseup", function(e) {
       var container2 = document.getElementById("mobileMenu");
       if (!container2.contains(e.target)) {
@@ -461,6 +437,13 @@
         }
       });
     });
+    
+    document.getElementById("activeMenu").classList.remove("text-gray-400")
+    document.getElementById("activeMenu").classList.add("text-blue-700")
+    document.getElementById("activeMenu").classList.add("pointer-events-none")
+    document.getElementById("activeMenuMobile").classList.remove("text-gray-400")
+    document.getElementById("activeMenuMobile").classList.add("text-blue-700")
+    document.getElementById("activeMenuMobile").classList.add("pointer-events-none")
     
   </script>
   <noscript>
