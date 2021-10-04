@@ -23,14 +23,6 @@ document.getElementById("closeRequest").addEventListener("click", function() {
 window.onresize = closeMenuResize;
 
 function closeMenuResize() {
-    document.getElementById("mobileMenu").style.transform = "scale(0.9,0.9)";
-    document.getElementById("mobileMenu").style.opacity = 0;
-    document.getElementById("mobileMenu").style.pointerEvents = "none";
-    document.getElementById("requestMobile").style.display = "none";
-    document.getElementById("requestButton").style.background = "#D1D5DB";
-    document.getElementById("requestButton").style.color = "#111827";
-    document.getElementById("requestButton").style.pointerEvents = "auto";
-    document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
     document.getElementById("overlay").style.opacity = 0;
     document.getElementById("overlay").style.pointerEvents = "none";
     document.getElementById("userMenu").style.opacity = 0;
