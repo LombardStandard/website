@@ -1,43 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
 <url>
-<loc>https://lombardstandard.github.io/website/</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://lombardstandard.com/</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>
-https://lombardstandard.github.io/website/for-buyers.html
-</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://lombardstandard.com/index.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://lombardstandard.github.io/website/for-sellers.html
-</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://lombardstandard.com/for-buyers.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://lombardstandard.github.io/website/about.html
-</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://lombardstandard.com/for-sellers.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://lombardstandard.github.io/website/contact.html
-</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://lombardstandard.com/about.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>
-https://lombardstandard.github.io/website/legal.html
-</loc>
-<lastmod>2021-09-28T09:12:59+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://lombardstandard.com/contact.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://lombardstandard.com/legal.html</loc>
+  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
