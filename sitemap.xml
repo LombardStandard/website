@@ -6,37 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://lombardstandard.com/</loc>
+  <loc>https://www.lombardstandard.com/</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://lombardstandard.com/index.html</loc>
+  <loc>https://www.lombardstandard.com/for-buyers.html</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lombardstandard.com/for-buyers.html</loc>
+  <loc>https://www.lombardstandard.com/for-sellers.html</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lombardstandard.com/for-sellers.html</loc>
+  <loc>https://www.lombardstandard.com/about.html</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lombardstandard.com/about.html</loc>
+  <loc>https://www.lombardstandard.com/contact.html</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lombardstandard.com/contact.html</loc>
-  <lastmod>2021-10-05T10:40:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://lombardstandard.com/legal.html</loc>
+  <loc>https://www.lombardstandard.com/legal.html</loc>
   <lastmod>2021-10-05T10:40:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
