@@ -5709,62 +5709,7 @@
 			},
 			"id": "0248"
 		},
-		{
-			"type": "Feature",
-			"properties": {
-				"Reference": "0249",
-				"Internal": "NSH-AR-HOT-40M ROME",
-				"Location1": "Italy, Rome",
-				"Location2": "Rome",
-				"Location3": "Rome - Villa Borghese",
-				"Name": "Private user",
-				"Photo": "blank",
-				"SLcode": "SL-0054",
-				"Company": "Private firm",
-				"Download": "None",
-				"Email": "info@ssglobalwealth.com",
-				"Share": "Yes",
-				"Address": "UK, London",
-				"Role": "Broker",
-				"Mandate": "Non-exclusive",
-				"Stars": "2",
-				"Rate3": "Fail",
-				"Rate2": "Pass",
-				"Rate1": "Pass",
-				"KeyDate1": "1899",
-				"KeyDate2": "2015",
-				"Commission": "Negotiable",
-				"Date": "20210530",
-				"Mark": "None",
-				"Type": "Hotel",
-				"Layout": "Building",
-				"LayoutDetail": "Building & Land",
-				"Operation": "Operating",
-				"OperationDetail": "Operating",
-				"Strategy": "Core",
-				"StrategyDetail": "Core",
-				"Title": "Freehold",
-				"TitleDetail": "Freehold",
-				"SubType": "Upscale hotel",
-				"Requirements": "-",
-				"Narrative": "Stunning late 19th century asset, on 6 floors and 7,400 sqm, this 4-star hotel offers an extremely curated and elegant environment. The current operator may be replaced by the new owner.",
-				"Yield": "Confidential",
-				"Size": "110+ keys",
-				"Currency": "EUR",
-				"Price": "€40m",
-				"P_ALL": 40,
-				"Y_ALL": -0.00001,
-				"Flag": "IT"
-			},
-			"geometry": {
-				"coordinates": [
-					12.49,
-					41.909
-				],
-				"type": "Point"
-			},
-			"id": "0249"
-		},
+
 		{
 			"type": "Feature",
 			"properties": {
