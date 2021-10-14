@@ -84,18 +84,18 @@
 						<div class="text-sm leading-6 font-bold text-gray-400">
 							BUYERS
 						</div>
-						<div class="text-3xl font-extrabold text-gray-900">2176</div>
-						<div><span class="text-xs font-extrabold text-teal-600 px-2 py-0.5 rounded-full bg-white">mtd +17.3%</span></div>
+						<div id="stat1" class="text-3xl font-extrabold text-gray-900">0</div>
+						<div><span id="delta1" class="text-xs font-extrabold text-teal-600 px-2 py-0.5 rounded-full bg-white">0</span></div>
 					</div>
 					<div class="flex flex-col py-8 sm:py-0">
 						<div class="text-sm leading-6 font-bold text-gray-400">AVG BUDGET</div>
-						<div class="text-3xl font-extrabold text-gray-900">$135.4m </div>
-						<div><span class="text-xs font-extrabold text-teal-600 px-2 py-0.5 rounded-full bg-white">mtd +13.2%</span></div>
+						<div id="stat2" class="text-3xl font-extrabold text-gray-900">0</div>
+						<div><span id="delta2" class="text-xs font-extrabold text-teal-600 px-2 py-0.5 rounded-full bg-white">0</span></div>
 					</div>
 					<div class="flex flex-col py-8 sm:py-0">
 						<div class="text-sm leading-6 font-bold text-gray-400">RFI RATIO</div>
-						<div class="text-3xl font-extrabold text-gray-900">59%</div>
-						<div><span class="text-xs font-extrabold text-pink-700 px-2 py-0.5 rounded-full bg-white">mtd -0.2%</span></div>
+						<div id="stat3" class="text-3xl font-extrabold text-gray-900">0</div>
+						<div><span id="delta3" class="text-xs font-extrabold text-pink-700 px-2 py-0.5 rounded-full bg-white">0</span></div>
 					</div>
 				</div>
 			</div>
@@ -541,6 +541,70 @@
 	<noscript>
 		<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif" />
 	</noscript>
+		
+		
+		
+		    <script>
+      var new1 = 2176
+      var old1 = 1855
+      var value1 = ((new1 - old1)/old1)*100;
+      var delta1 = document.getElementById("delta1")
+      document.getElementById("stat1").innerHTML = new1
+      delta1.innerHTML = value1.toFixed(1);
+      if (value1 > 0) {
+      	delta1.style.color ='#059669'
+      	delta1.innerHTML = "+" + value1.toFixed(1) + "%"
+      }
+      if (value1 === 0) {
+      	delta1.style.color ='#111827'
+      	delta1.innerHTML = value1.toFixed(1) + "%"
+      }
+      if (value1 < 0) {
+      	delta1.style.color ='#BE185D'
+      	delta1.innerHTML = value1.toFixed(1) + "%"
+      }
+      
+      var new2 = 113.8
+      var old2 = 135.4
+      var value2 = ((new2 - old2)/old2)*100;
+      var delta2 = document.getElementById("delta2")
+      document.getElementById("stat2").innerHTML = "$" + new2 +"m"
+      delta2.innerHTML = value2.toFixed(1);
+      if (value2 > 0) {
+      	delta2.style.color ='#059669'
+      	delta2.innerHTML = "+" + value2.toFixed(1) + "%"
+      }
+      if (value2 === 0) {
+      	delta2.style.color ='#111827'
+      	delta2.innerHTML = value2.toFixed(1) + "%"
+      }
+      if (value2 < 0) {
+      	delta2.style.color ='#BE185D'
+      	delta2.innerHTML = value2.toFixed(1) + "%"
+      }
+      
+      var new3 = 29
+      var old3 = 29.9
+      var value3 = ((new3 - old3)/old3)*100;
+      var delta3 = document.getElementById("delta3")
+      document.getElementById("stat3").innerHTML = new3 +"%"
+      delta3.innerHTML = value3.toFixed(1);
+      if (value3 > 0) {
+      	delta3.style.color ='#059669'
+      	delta3.innerHTML = "+" + value3.toFixed(1) + "%"
+      }
+      if (value3 === 0) {
+      	delta3.style.color ='#111827'
+      	delta3.innerHTML = value3.toFixed(1) + "%"
+      }
+      if (value3 < 0) {
+      	delta3.style.color ='#BE185D'
+      	delta3.innerHTML = value3.toFixed(1) + "%"
+      }
+      
+      
+    </script>
 </body>
 
+	
 </html>
