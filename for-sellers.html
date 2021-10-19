@@ -573,8 +573,8 @@
 
 				// var new1 = 2176
 				// var old1 = 1855
-				var new1 = Number(curr.ukTOT[0]) + Number(curr.usTOT[0]) + Number(curr.wwTOT[0]) +  Number(curr.hkTOT[0]) + Number(curr.jpTOT[0]);
-				var old1 = Number(prev.ukTOT[0]) + Number(prev.usTOT[0]) + Number(prev.wwTOT[0]) +  Number(prev.hkTOT[0]) + Number(prev.jpTOT[0]);
+				var new1 = curr.length[0]
+				var old1 = prev.length[0]
 				
 				var value1 = ((new1 - old1)/old1)*100;
 				var delta1 = document.getElementById("delta1")

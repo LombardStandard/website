@@ -1121,8 +1121,8 @@
               const curr = dataCurr.body.Items[0].data;
               console.info("prev",prev);
               console.info("curr",curr);
-              var new1 = curr.buildingTOT[0];
-              var old1 = prev.buildingTOT[0];
+              var new1 = curr.totalCount[0];
+              var old1 = prev.totalCount[0];
               var value1 = ((new1 - old1) / old1) * 100;
               var delta1 = document.getElementById("delta1");
               document.getElementById("stat1").innerHTML = new1;
