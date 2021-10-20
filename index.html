@@ -77,7 +77,10 @@
 		"@type": "PostalAddress",
 		"streetAddress": "64 Connaught Road Central",
 		"addressLocality": "Hong Kong",
-		"addressCountry": "HK"
+		"addressCountry": {
+			"@type": "Country",
+			"name": "HK"
+		}
 	},
 	"owns": {
 		"@type": "Product",
@@ -89,12 +92,15 @@
 		"givenName": "Alberto MG",
 		"familyName": "Saruggia",
 		"sameAs": [
-		"https://www.crunchbase.com/person/alberto-mg-saruggia", 
-		"www.linkedin.com/in/alberto-mg-saruggia"
+			"https://www.crunchbase.com/person/alberto-mg-saruggia",
+			"www.linkedin.com/in/alberto-mg-saruggia"
 		]
 	},
 	"foundingDate": "2018",
-	"foundingLocation": "Tokyo, Japan"
+	"foundingLocation": {
+		"@type": "Place",
+		"name": "Tokyo, Japan"
+	}
 }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
