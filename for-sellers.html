@@ -616,8 +616,8 @@
 				
 				// var new3 = 34.8
 				// var old3 = 34.2
-				var new3 = curr.rfiRatio;
-              	var old3 = prev.rfiRatio;
+				var new3 = (curr.rfiRatio/curr.totalCount) * 100;
+              	var old3 = (prev.rfiRatio/prev.totalCount) * 100;
 				var value3 = ((new3 - old3)/old3)*100;
 				var delta3 = document.getElementById("delta3")
 				document.getElementById("stat3").innerHTML = new3 +"%"
