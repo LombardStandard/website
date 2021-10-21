@@ -1115,14 +1115,12 @@
           loadJSON(
             "https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_prev.json",
             function (dataPrev) {
-              
-              
-              const prev = dataPrev.body.Items[0].data;
-              const curr = dataCurr.body.Items[0].data;
+              const prev = dataPrev;
+              const curr = dataCurr;
               console.info("prev",prev);
               console.info("curr",curr);
-              var new1 = curr.totalCount[0];
-              var old1 = prev.totalCount[0];
+              var new1 = curr.assets;
+              var old1 = prev.assets;
               var value1 = ((new1 - old1) / old1) * 100;
               var delta1 = document.getElementById("delta1");
               document.getElementById("stat1").innerHTML = new1;
@@ -1142,8 +1140,8 @@
 
               // var new2 = 101.5;
               // var old2 = 98.4;
-              var new2 = curr.pricesAvg[0].substring(1,curr.pricesAvg[0].length -1);
-              var old2 = prev.pricesAvg[0].substring(1,prev.pricesAvg[0].length -1);
+              var new2 = curr.avgPrice.substring(1,curr.avgPrice.length -1);
+              var old2 = prev.avgPrice.substring(1,prev.avgPrice.length -1);
               var value2 = ((new2 - old2) / old2) * 100;
               var delta2 = document.getElementById("delta2");
               document.getElementById("stat2").innerHTML = "$" + new2 + "m";
@@ -1163,8 +1161,8 @@
 
               // var new3 = 12.7;
               // var old3 = 12.6;
-              var new3 = curr.yieldsAvg[0].substring(0,curr.yieldsAvg[0].length -1);
-              var old3 = prev.yieldsAvg[0].substring(0,prev.yieldsAvg[0].length -1);
+              var new3 = curr.avgYield.substring(0,curr.avgYield.length -1);
+              var old3 = prev.avgYield.substring(0,prev.avgYield.length -1);
               var value3 = ((new3 - old3) / old3) * 100;
               var delta3 = document.getElementById("delta3");
               document.getElementById("stat3").innerHTML = new3 + "%";

@@ -566,15 +566,15 @@
 		loadJSON(
 			"https://lombst.s3.amazonaws.com/export/mtd/sellers/website_analytics_prev.json",
 			function (dataPrev) {
-				const prev = dataPrev.body.Items[0].data;
-                const curr = dataCurr.body.Items[0].data;
+				const prev = dataPrev;
+                const curr = dataCurr;
                 console.info("prev",prev);
                 console.info("curr",curr);
 
 				// var new1 = 2176
 				// var old1 = 1855
-				var new1 = curr.length[0]
-				var old1 = prev.length[0]
+				var new1 = curr.buyers;
+				var old1 = prev.buyers;
 				
 				var value1 = ((new1 - old1)/old1)*100;
 				var delta1 = document.getElementById("delta1")
@@ -595,8 +595,8 @@
 				
 				// var new2 = 113.8
 				// var old2 = 135.4
-				var new2 = curr.avgBudget[0].substring(1,curr.avgBudget[0].length -1);
-              	var old2 = prev.avgBudget[0].substring(1,prev.avgBudget[0].length -1);
+				var new2 = curr.avgBudget.substring(1,curr.avgBudget.length -1);
+              	var old2 = prev.avgBudget.substring(1,prev.avgBudget.length -1);
 				var value2 = ((new2 - old2)/old2)*100;
 				var delta2 = document.getElementById("delta2")
 				document.getElementById("stat2").innerHTML = "$" + new2 +"m"
@@ -616,8 +616,8 @@
 				
 				// var new3 = 34.8
 				// var old3 = 34.2
-				var new3 = curr.avgRFI[0];
-              	var old3 = prev.avgRFI[0];
+				var new3 = curr.rfiRatio;
+              	var old3 = prev.rfiRatio;
 				var value3 = ((new3 - old3)/old3)*100;
 				var delta3 = document.getElementById("delta3")
 				document.getElementById("stat3").innerHTML = new3 +"%"
