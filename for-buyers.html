@@ -409,42 +409,127 @@
 
       function onScroll() {
         var scrollPosition = window.scrollY,
-          showHeaderPosition = 150; // Determine if position is at a certain pointif (scrollPosition >= showHeaderPosition) {document.getElementById("header2").style.top = "0px";} else {document.getElementById("header2").style.top = "-100px";}}var acc = document.getElementsByClassName("accordion");var i;for (i = 0; i < acc.length; i++) {acc[i].addEventListener("click", function() {this.classList.toggle("active");var panel = this.nextElementSibling;if (panel.style.maxHeight) {panel.style.maxHeight = null;} else {panel.style.maxHeight = panel.scrollHeight + "px";}});}
+          showHeaderPosition = 150;
+        // Determine if position is at a certain point
+        if (scrollPosition >= showHeaderPosition) {
+          document.getElementById("header2").style.top = "0px";
+        } else {
+          document.getElementById("header2").style.top = "-100px";
+        }
+      }
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
     </script>
     <noscript>
-      <img height="1" width="1" style="display: none" alt="" src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif" />
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif"
+      />
     </noscript>
     <script>
       function loadJSON(url, callback) {
         var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
-        xobj.open("GET", url, true); // Replace 'appDataServices' with the path to your filexobj.onreadystatechange = function() {if (xobj.readyState == 4 && xobj.status == "200") {// Required use of an anonymous callback as .open//will NOT return a value but simply returns undefined in asynchronous modecallback(JSON.parse(xobj.responseText));}};xobj.send(null);}
+        xobj.open("GET", url, true); // Replace 'appDataServices' with the path to your file
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open
+            //will NOT return a value but simply returns undefined in asynchronous mode
+            callback(JSON.parse(xobj.responseText));
+          }
+        };
+        xobj.send(null);
+      }
     </script>
     <script async>
-      loadJSON("https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_curr.json", function(dataCurr) {
-            loadJSON("https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_prev.json", function(dataPrev) {
-                  const prev = dataPrev;
-                  const curr = dataCurr;
-                  console.info("prev", prev);
-                  console.info("curr", curr);
-                  var new1 = curr.assets;
-                  var old1 = prev.assets;
-                  var value1 = ((new1 - old1) / old1) * 100;
-                  var delta1 = document.getElementById("delta1");
-                  document.getElementById("stat1").innerHTML = new1;
-                  delta1.innerHTML = value1.toFixed(1);
-                  if (value1 > 0) {
-                    delta1.style.color = "#059669";
-                    delta1.innerHTML = "+" + value1.toFixed(1) + "%";
-                  }
-                  if (value1 === 0) {
-                    delta1.style.color = "#111827";
-                    delta1.innerHTML = value1.toFixed(1) + "%";
-                  }
-                  if (value1 < 0) {
-                    delta1.style.color = "#BE185D";
-                    delta1.innerHTML = value1.toFixed(1) + "%";
-                  } // var new2 = 101.5;// var old2 = 98.4;var new2 = curr.avgPrice.substring(1, curr.avgPrice.length - 1);var old2 = prev.avgPrice.substring(1, prev.avgPrice.length - 1);var value2 = ((new2 - old2) / old2) * 100;var delta2 = document.getElementById("delta2");document.getElementById("stat2").innerHTML = "$" + new2 + "m";delta2.innerHTML = value2.toFixed(1);if (value2 > 0) {delta2.style.color = "#059669";delta2.innerHTML = "+" + value2.toFixed(1) + "%";}if (value2 === 0) {delta2.style.color = "#111827";delta2.innerHTML = value2.toFixed(1) + "%";}if (value2 < 0) {delta2.style.color = "#BE185D";delta2.innerHTML = value2.toFixed(1) + "%";}// var new3 = 12.7;// var old3 = 12.6;var new3 = curr.avgYield.substring(0, curr.avgYield.length - 1);var old3 = prev.avgYield.substring(0, prev.avgYield.length - 1);var value3 = ((new3 - old3) / old3) * 100;var delta3 = document.getElementById("delta3");document.getElementById("stat3").innerHTML = new3 + "%";delta3.innerHTML = value3.toFixed(1);if (value3 > 0) {delta3.style.color = "#059669";delta3.innerHTML = "+" + value3.toFixed(1) + "%";}if (value3 === 0) {delta3.style.color = "#111827";delta3.innerHTML = value3.toFixed(1) + "%";}if (value3 < 0) {delta3.style.color = "#BE185D";delta3.innerHTML = value3.toFixed(1) + "%";}});});
+      loadJSON(
+        "https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_curr.json",
+        function (dataCurr) {
+          loadJSON(
+            "https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_prev.json",
+            function (dataPrev) {
+              const prev = dataPrev;
+              const curr = dataCurr;
+              console.info("prev",prev);
+              console.info("curr",curr);
+              var new1 = curr.assets;
+              var old1 = prev.assets;
+              var value1 = ((new1 - old1) / old1) * 100;
+              var delta1 = document.getElementById("delta1");
+              document.getElementById("stat1").innerHTML = new1;
+              delta1.innerHTML = value1.toFixed(1);
+              if (value1 > 0) {
+                delta1.style.color = "#059669";
+                delta1.innerHTML = "+" + value1.toFixed(1) + "%";
+              }
+              if (value1 === 0) {
+                delta1.style.color = "#111827";
+                delta1.innerHTML = value1.toFixed(1) + "%";
+              }
+              if (value1 < 0) {
+                delta1.style.color = "#BE185D";
+                delta1.innerHTML = value1.toFixed(1) + "%";
+              }
+
+              // var new2 = 101.5;
+              // var old2 = 98.4;
+              var new2 = curr.avgPrice.substring(1,curr.avgPrice.length -1);
+              var old2 = prev.avgPrice.substring(1,prev.avgPrice.length -1);
+              var value2 = ((new2 - old2) / old2) * 100;
+              var delta2 = document.getElementById("delta2");
+              document.getElementById("stat2").innerHTML = "$" + new2 + "m";
+              delta2.innerHTML = value2.toFixed(1);
+              if (value2 > 0) {
+                delta2.style.color = "#059669";
+                delta2.innerHTML = "+" + value2.toFixed(1) + "%";
+              }
+              if (value2 === 0) {
+                delta2.style.color = "#111827";
+                delta2.innerHTML = value2.toFixed(1) + "%";
+              }
+              if (value2 < 0) {
+                delta2.style.color = "#BE185D";
+                delta2.innerHTML = value2.toFixed(1) + "%";
+              }
+
+              // var new3 = 12.7;
+              // var old3 = 12.6;
+              var new3 = curr.avgYield.substring(0,curr.avgYield.length -1);
+              var old3 = prev.avgYield.substring(0,prev.avgYield.length -1);
+              var value3 = ((new3 - old3) / old3) * 100;
+              var delta3 = document.getElementById("delta3");
+              document.getElementById("stat3").innerHTML = new3 + "%";
+              delta3.innerHTML = value3.toFixed(1);
+              if (value3 > 0) {
+                delta3.style.color = "#059669";
+                delta3.innerHTML = "+" + value3.toFixed(1) + "%";
+              }
+              if (value3 === 0) {
+                delta3.style.color = "#111827";
+                delta3.innerHTML = value3.toFixed(1) + "%";
+              }
+              if (value3 < 0) {
+                delta3.style.color = "#BE185D";
+                delta3.innerHTML = value3.toFixed(1) + "%";
+              }
+            }
+          );
+        }
+      );
     </script>
   </body>
 </html>
