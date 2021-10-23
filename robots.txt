@@ -1,6 +1,6 @@
 User-agent: *
-Disallow: /404
-Disallow: /unsubscribed
-Disallow: /legal
-Disallow: /offices
+Disallow: /404/
+Disallow: /unsubscribed/
+Disallow: /legal/
+Disallow: /offices/
 Sitemap: https://lombardstandard.com/sitemap.xml
