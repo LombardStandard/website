@@ -550,17 +550,11 @@
                       const totalsCity = curr.totalsCity || {};
 		      Object.entries(totalsCity).forEach(kv =>{
                         const newData = kv[1];
-			if (newData) {
-                          const city = kv[0].replace(/\s/g, '').toLowerCase();
-  			  // remove spaces i.e. new york => newyork
-                          const element = document.getElementById("stat_"+city);
-			  if (element) {
-                            element.innerHTML = newData + " deals";
-			  }
-			}else {
-			  console.log("city", city);
-			  console.log("newData", newData);
-			  console.log("element", element);
+                        const city = kv[0].replace(/\s/g, '').toLowerCase();
+			// remove spaces i.e. new york => newyork
+                        const element = document.getElementById("stat_"+city);
+			if (element) {
+                          element.innerHTML = newData + " deals";
 			}
 		      });
 
