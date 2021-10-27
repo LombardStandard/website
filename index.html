@@ -227,27 +227,28 @@
             <div class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto rounded-md">
               <img class="h-full w-auto rounded-md" src="https://cdn.lomb.st/website/home-city-london.jpg" alt="home-city-london">
             </div> 
-            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 max-w-min">London<br><span class="text-gray-400 text-base font-light" id="stat5"></span></p>
+            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 max-w-min">London</br><span class="text-gray-400 text-base font-light" id="stat_london"></span></p>
           </a>
           <a href="https://app.lombardstandard.com/?location=Australia%2C+Sydney&currency=AUD&zoom=8.05" target="_blank" class="inline-flex space-x-4 items-center cursor-pointer h-16 sm:h-20 md:h-24 lg:h-28">
             <div class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto rounded-md">
               <img class="h-full w-auto rounded-md" src="https://cdn.lomb.st/website/home-city-sydney-v2.jpg" alt="home-city-sydney">
             </div>
-            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900">Sydney<br><span class="text-gray-400 text-base font-light" id="stat6"></span></p>
+            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900">Sydney<br><span class="text-gray-400 text-base font-light" id="stat_sydney"></span></p>
           </a>
           <a href="https://app.lombardstandard.com/?location=Japan%2C%20Tokyo&currency=JPY&zoom=7.61" target="_blank" class="space-x-4 items-center cursor-pointer h-16 sm:h-20 md:h-24 lg:h-28 md:inline-flex hidden">
             <div class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto rounded-md">
               <img class="h-full w-auto rounded-md" src="https://cdn.lomb.st/website/home-city-tokyo.jpg" alt="home-city-tokyo">
             </div>
-            <p class="text-lg sm:text-xl font-extrabold text-gray-900 leading-6">Tokyo<br><span class="text-gray-400 text-base font-light" id="stat7"></span></p>
+            <p class="text-lg sm:text-xl font-extrabold text-gray-900 leading-6">Tokyo</br><span class="text-gray-400 text-base font-light" id="stat_tokyo"></span></p>
           </a>
           <a href="https://app.lombardstandard.com/?location=US%2C%20New%20York&currency=USD&zoom=7.61" target="_blank" class="space-x-4 items-center cursor-pointer h-16 sm:h-20 md:h-24 lg:h-28 lg:inline-flex hidden">
             <div class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto rounded-md">
               <img class="h-full w-auto rounded-md" src="https://cdn.lomb.st/website/home-city-newyork.jpg" alt="home-city-newyork">
             </div>
-            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900">New York<br><span class="text-gray-400 text-base font-light" id="stat8"></span></p>
+            <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900">New York</br><span class="text-gray-400 text-base font-light" id="stat_newyork"></span></p>
           </a>
         </div>
+	<!--
         <div class="grid grid-cols-2 gap-6 md:hidden mt-6">
           <a href="https://app.lombardstandard.com/?location=Japan%2C%20Tokyo&currency=JPY&zoom=7.61" target="_blank" class="inline-flex space-x-4 items-center cursor-pointer h-16 sm:h-20 md:h-24 lg:h-28">
             <div class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto">
@@ -263,6 +264,7 @@
           </a>
         </div>
       </div>
+	-->
     </div>
     <!-- By Types -->
     <div class="py-16 px-4 sm:px-8 md:px-12">
@@ -552,25 +554,17 @@
 
 
                       // hot markets
-                      var new5 = curr.totalsCity.london;
-                      document.getElementById("stat5").innerHTML = new5 + " assets";
-
-                      var new6 = curr.totalsCity.sydney;
-                      document.getElementById("stat6").innerHTML = new6 + " assets";
-
-                      var new7 = curr.totalsCity.tokyo;
-                      document.getElementById("stat7").innerHTML = new7 + " assets";
-
-                      var new8 = curr.totalsCity.newyork;
-                      document.getElementById("stat8").innerHTML = new8 + " assets";
-                      
-		      var new7a = curr.totalsCity.tokyo;
-                      document.getElementById("stat7a").innerHTML = new7a + " assets";
-                                            
-		      var new8a = curr.totalsCity.newyork;
-                      document.getElementById("stat8a").innerHTML = new8a + " assets";
-                      
-
+		      // add more cities by using id stat_<cityname> (remove all spaces in <cityname> i.e. stat_newyork instead of stat_new_york)
+                      const totalsCity = curr.totalsCity || {};
+		      Object.entries(totalsCity).forEach(kv =>{
+                        const newData = kv[1];
+                        const city = kv[0].replace(/\s/g, '').toLowerCase();
+			// remove spaces i.e. new york => newyork
+                        const element = document.getElementById("stat_"+city);
+			if (element) {
+                          element.innerHTML = newData + " deals";
+			}
+		      });
                   })
 
               })
@@ -582,4 +576,3 @@
     
   </body>
 </html>
-
