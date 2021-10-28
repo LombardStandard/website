@@ -8,7 +8,4 @@ Disallow: /img/svgs/icon-builtworld.svg
 Disallow: /img/svgs/icon-rics.svg
 Sitemap: https://lombardstandard.com/sitemap.xml
 
-User-agent: Googlebot-Image
-Disallow: /img/svgs/icon-investhk.svg
-Disallow: /img/svgs/icon-builtworld.svg
-Disallow: /img/svgs/icon-rics.svg
+
