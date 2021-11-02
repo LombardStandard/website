@@ -117,6 +117,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="https://www.unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/daisyui@latest/dist/full.css">
   <!-- Cookie Consent -->
   <script src="https://cookieinfoscript.com/js/cookieinfo.min.js" type="text/javascript" id="cookieinfo" data-cookie="CookieInfoScript" data-close-text="OK" data-font-size="14px" data-message="<svg class='inline h-5 w-5 text-gray-900 mr-2'><use href='img/svgs/solid-eye.svg#solid-eye' /></svg>By viewing this website you agree with our" data-link="#111827" data-linkmsg="<strong>privacy policy</strong>" data-moreinfo="https://lombardstandard.com/legal" data-text-align="left" data-bg="#FEF3C7" data-cookie="Lombard Standard Analytics"></script>
 </head>
@@ -263,32 +264,66 @@
         <h2 class="text-2xl font-light text-gray-900 tracking-tight sm:text-3xl mb-4 sm:mb-8">Asset types
         </h2>
       </div>
-      <div class="grid grid-cols-2 gap-6 space-y-0 lg:grid-cols-4 md:grid-cols-3">
-        <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=19.530&lng=72.802&types=Office" target="_blank">
-          <div class="rounded-lg overflow-hidden">
-            <img class="h-full w-full rounded-md" src="https://cdn.lomb.st/website/home-type-office.jpg" alt="home-type-office">
-          </div>
-          <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-3 text-center">Offices<br><span class="text-gray-400 text-base font-light" id="stat1"></span></p>
-        </a>
-        <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=19.530&lng=72.802&types=Hotel" target="_blank">
-          <div class="rounded-lg overflow-hidden">
-            <img class="h-full w-full" src="https://cdn.lomb.st/website/home-type-hotel.jpg" alt="home-type-hotel">
-          </div>
-          <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-3 text-center">Hotels<br><span class="text-gray-400 text-base font-light" id="stat2"></span></p>
-        </a>
-        <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="md:block">
-          <div class="rounded-lg overflow-hidden">
-            <img class="h-full w-full rounded-md" src="https://cdn.lomb.st/website/home-type-residential.png" alt="home-type-residential">
-          </div>
-          <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-3 text-center">Residential<br><span class="text-gray-400 text-base font-light" id="stat3"></span></p>
-        </a>
-        <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="sm:block md:hidden lg:block">
-          <div class="rounded-lg  overflow-hidden  lg:inline-flex">
-            <img class="h-full w-full rounded-md" src="https://cdn.lomb.st/website/home-type-retail.jpg" alt="home-type-retail">
-          </div>
-          <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-3 text-center">Retail<br><span class="text-gray-400 text-base font-light" id="stat4"></span></p>
-        </a>
-      </div>
+<div class="carousel">
+  
+
+  
+   <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mx-4" id="item1">
+   <div class="carousel-item flex flex-col">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
+    <img src="https://cdn.lomb.st/website/home-type-office.jpg" class="rounded-lg w-full h-full">
+  </div>
+     <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Offices<br><span class="text-gray-400 text-base font-light" id="stat1"></span></p>
+  </div> 
+  </a>
+  
+   <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mx-4" id="item2">
+   <div class="carousel-item flex flex-col">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
+    <img src="https://cdn.lomb.st/website/home-type-hotel.jpg" class="rounded-lg w-full h-full">
+  </div>
+     <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Hotel<br><span class="text-gray-400 text-base font-light" id="stat2"></span></p>
+  </div> 
+  </a>
+  
+  
+  <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mx-4" id="item3">
+   <div class="carousel-item flex flex-col">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
+    <img src="https://cdn.lomb.st/website/home-type-residential.png" class="rounded-lg w-full h-full">
+  </div>
+     <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Residential<br><span class="text-gray-400 text-base font-light" id="stat3"></span></p>
+  </div> 
+  </a>
+  
+ <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="mx-4" id="item4">
+   <div class="carousel-item flex flex-col">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
+    <img src="https://cdn.lomb.st/website/home-type-retail.jpg" class="rounded-lg w-full h-full">
+  </div>
+     <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Retail<br><span class="text-gray-400 text-base font-light" id="stat4"></span></p>
+  </div> 
+  </a>
+  
+ <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="mx-4" id="item5">
+   <div class="carousel-item flex flex-col">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
+    <img src="https://cdn.lomb.st/website/home-type-industrial.jpg" class="rounded-lg w-full h-full">
+  </div>
+     <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Industrial<br><span class="text-gray-400 text-base font-light" id="stat5"></span></p>
+  </div> 
+  </a>
+  
+
+  
+</div>
+  <div class="flex justify-center w-full py-4 space-x-2">
+  <a href="#item1" class="btn btn-xs btn-circle">1</a> 
+  <a href="#item2" class="btn btn-xs btn-circle">2</a> 
+  <a href="#item3" class="btn btn-xs btn-circle">3</a> 
+  <a href="#item4" class="btn btn-xs btn-circle">4</a>
+  <a href="#item5" class="btn btn-xs btn-circle">5</a>
+</div>
 
     </div>
   </div>
@@ -516,6 +551,8 @@
             document.getElementById("stat3").innerHTML = new3 + " assets";
             var new4 = curr.totalsClass.retail;
             document.getElementById("stat4").innerHTML = new4 + " assets";
+            var new5 = curr.totalsClass.industrial;
+            document.getElementById("stat5").innerHTML = new5 + " assets";
             // hot markets
             // add more cities by using id stat_<cityname> (remove all spaces in <cityname> i.e. stat_newyork instead of stat_new_york)
             const totalsCity = curr.totalsCity || {};
