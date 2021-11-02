@@ -117,9 +117,11 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="https://www.unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.1/dist/full.css" rel="stylesheet" >
+  
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <link rel="stylesheet"  href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <!-- Cookie Consent -->
   <script src="https://cookieinfoscript.com/js/cookieinfo.min.js" type="text/javascript" id="cookieinfo" data-cookie="CookieInfoScript" data-close-text="OK" data-font-size="14px" data-message="<svg class='inline h-5 w-5 text-gray-900 mr-2'><use href='img/svgs/solid-eye.svg#solid-eye' /></svg>By viewing this website you agree with our" data-link="#111827" data-linkmsg="<strong>privacy policy</strong>" data-moreinfo="https://lombardstandard.com/legal" data-text-align="left" data-bg="#FEF3C7" data-cookie="Lombard Standard Analytics"></script>
 </head>
@@ -266,11 +268,13 @@
         <h2 class="text-2xl font-light text-gray-900 tracking-tight sm:text-3xl mb-4 sm:mb-8">Asset types
         </h2>
       </div>
-<div class="carousel">
+<div class="carousel"
+  data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false, "autoPlay": 1500, "wrapAround": true  }'>
+
   
    <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mr-6" id="item1">
    <div class="carousel-item flex flex-col">
-    <div class="overflow-hidden rounded-lg w-60 h-60">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
     <img src="https://cdn.lomb.st/website/home-type-office.jpg" class="rounded-lg w-full h-full">
   </div>
      <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Offices<br><span class="text-gray-400 text-base font-light" id="stat1"></span></p>
@@ -279,7 +283,7 @@
   
    <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mr-6" id="item2">
    <div class="carousel-item flex flex-col">
-    <div class="overflow-hidden rounded-lg w-60 h-60">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
     <img src="https://cdn.lomb.st/website/home-type-hotel.jpg" class="rounded-lg w-full h-full">
   </div>
      <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Hotel<br><span class="text-gray-400 text-base font-light" id="stat2"></span></p>
@@ -289,7 +293,7 @@
   
   <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mr-6" id="item3">
    <div class="carousel-item flex flex-col">
-    <div class="overflow-hidden rounded-lg w-60 h-60">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
     <img src="https://cdn.lomb.st/website/home-type-residential.png" class="rounded-lg w-full h-full">
   </div>
      <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Residential<br><span class="text-gray-400 text-base font-light" id="stat3"></span></p>
@@ -298,16 +302,16 @@
   
  <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="mr-6" id="item4">
    <div class="carousel-item flex flex-col">
-    <div class="overflow-hidden rounded-lg w-60 h-60">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
     <img src="https://cdn.lomb.st/website/home-type-retail.jpg" class="rounded-lg w-full h-full">
   </div>
      <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Retail<br><span class="text-gray-400 text-base font-light" id="stat4"></span></p>
   </div> 
   </a>
   
- <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" id="item5">
+ <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="mr-6" id="item5">
    <div class="carousel-item flex flex-col">
-    <div class="overflow-hidden rounded-lg w-60 h-60">
+    <div class="overflow-hidden rounded-lg w-80 h-80">
     <img src="https://cdn.lomb.st/website/home-type-industrial.jpg" class="rounded-lg w-full h-full">
   </div>
      <p class="text-lg sm:text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Industrial<br><span class="text-gray-400 text-base font-light" id="stat5"></span></p>
@@ -316,6 +320,7 @@
   
 
   
+
 </div>
 
     </div>
