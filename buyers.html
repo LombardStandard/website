@@ -406,7 +406,7 @@
         var scrollPosition = window.scrollY,
           showHeaderPosition = 150;
         // Determine if position is at a certain point
-        if (scrollPosition>= showHeaderPosition) {
+        if (scrollPosition >= showHeaderPosition) {
           document.getElementById("header2").style.top = "0px";
         } else {
           document.getElementById("header2").style.top = "-100px";
@@ -467,7 +467,7 @@
               var delta1 = document.getElementById("delta1");
               document.getElementById("stat1").innerHTML = new1;
               delta1.innerHTML = value1.toFixed(1);
-              if (value1> 0) {
+              if (value1 > 0) {
                 delta1.style.color = "#059669";
                 delta1.innerHTML = "+" + value1.toFixed(1) + "%";
               }
@@ -488,7 +488,7 @@
               var delta2 = document.getElementById("delta2");
               document.getElementById("stat2").innerHTML = "$" + new2 + "m";
               delta2.innerHTML = value2.toFixed(1);
-              if (value2> 0) {
+              if (value2 > 0) {
                 delta2.style.color = "#059669";
                 delta2.innerHTML = "+" + value2.toFixed(1) + "%";
               }
@@ -509,7 +509,7 @@
               var delta3 = document.getElementById("delta3");
               document.getElementById("stat3").innerHTML = new3 + "%";
               delta3.innerHTML = value3.toFixed(1);
-              if (value3> 0) {
+              if (value3 > 0) {
                 delta3.style.color = "#059669";
                 delta3.innerHTML = "+" + value3.toFixed(1) + "%";
               }
