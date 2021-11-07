@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +9,9 @@
     <meta property="og:title" content="Lombard Standard | Unsubscribed">
     <meta property="og:description" content="You have now unsubscribed. Your email has been removed from our database, thank you for your patience.">
     <meta property="og:image" content="https://cdn.lomb.st/social/share-main.png">
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
     <meta property="og:url" content="https://lombardstandard.com/unsubscribed">
     <meta property="og:site_name" content="Lombard Standard Ltd">
     <meta property="og:type" content="website">
@@ -37,38 +36,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
     <!-- CSS -->
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://www.unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
-
-</head>
-
-<body>
+    <link rel="stylesheet" href="https://www.unpkg.com/tailwindcss@2.2/dist/tailwind.min.css">
+    <style>
+      .font-mono {
+      font-family: 'Roboto Mono', monospace;
+      }
+    </style>
+  </head>
+  <body>
     <!-- Unsubscribed -->
     <div class="bg-white min-h-screen px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
-        <div class="max-w-max mx-auto">
-            <main class="sm:flex">
-                <svg class="h-16 w-16 text-blue-700 inline self-top">
-                    <use href="img/svgs/solid-check.svg#solid-check" />
-                </svg>
-                <div class="sm:ml-6">
-                    <div class="sm:border-l sm:border-gray-300 sm:pl-6">
-                        <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Unsubscribed</h1>
-                        <p class="mt-1 text-base text-gray-400">Your email has been removed from our database.</p>
-                    </div>
-                    <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-                        <a href="/" target="_self" class="inline-flex items-center px-3 py-2 uppercase tracking-tight transition-all text-sm font-extrabold rounded-lg text-white bg-blue-700 hover:bg-blue-800">
-                            GO TO HOMEPAGE
-                        </a>
-                    </div>
-                </div>
-            </main>
-        </div>
+      <div class="max-w-max mx-auto">
+        <main class="sm:flex">
+          <svg class="h-16 w-16 text-blue-700 inline self-top">
+            <use xlink:href="img/svgs/solid-check.svg#solid-check"></use>
+          </svg>
+          <div class="sm:ml-6">
+            <div class="sm:border-l sm:border-gray-300 sm:pl-6">
+              <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Unsubscribed</h1>
+              <p class="mt-1 text-base text-gray-400">Your email has been removed from our database.</p>
+            </div>
+            <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+              <a href="/" target="_self" class="inline-flex items-center px-3 py-2 uppercase tracking-tight transition-all text-sm font-extrabold rounded-lg text-white bg-blue-700 hover:bg-blue-800">
+              GO TO HOMEPAGE
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
-    <!-- CSS -->
-    <style>
-        .font-mono {
-            font-family: 'Roboto Mono', monospace;
-        }
-    </style>
-</body>
-
+  </body>
 </html>
