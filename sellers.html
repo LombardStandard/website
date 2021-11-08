@@ -34,6 +34,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/", 
+        "@type": "BreadcrumbList", 
+        "itemListElement": [{
+          "@type": "ListItem", 
+          "position": 1, 
+          "name": "Lombard Standard",
+          "item": "https://lombardstandard.com"  
+        },{
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "Sellers",
+          "item": "https://lombardstandard.com/sellers"  
+        }]
+      }
+    </script>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
@@ -217,17 +234,17 @@
           <button class="tablinks text-sm font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Inquire')" id="defaultOpen">Direct inquire</button>
           <button class="tablinks text-sm font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Share')">Sharelink</button>
           <div class="inline-flex">
-          <button class="tablinks text-sm font-extrabold tracking-tight text-gray-400 text-left items-center flex" onclick="openTab(event, 'Download')">
+            <button class="tablinks text-sm font-extrabold tracking-tight text-gray-400 text-left items-center flex" onclick="openTab(event, 'Download')">
             PDF Brochure
-          </button>
+            </button>
             <div class="flex flex-grow-0 items-center ml-2 rounded-full px-2 py-0.5 text-center text-xs font-bold text-blue-700 align-middle bg-white border border-blue-700 cursor-default">soon</div>
           </div>
           <div class="inline-flex">
-          <button class="tablinks text-sm font-extrabold tracking-tight text-gray-400 text-left items-center flex" onclick="openTab(event, 'Campaign')">
+            <button class="tablinks text-sm font-extrabold tracking-tight text-gray-400 text-left items-center flex" onclick="openTab(event, 'Campaign')">
             Newsletter
-          </button>
+            </button>
             <div class="flex flex-grow-0 items-center ml-2 rounded-full px-2 py-0.5 text-center text-xs font-bold text-blue-700 align-middle bg-white border border-blue-700 cursor-default">soon</div>
-            </div>
+          </div>
         </div>
         <div class="text-gray-900 mt-4 sm:mt-12">
           <div id="Inquire" class="tabcontent">
