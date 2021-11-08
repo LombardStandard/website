@@ -39,11 +39,12 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "name": "Lombard Standard",
-        "description": "A sourcing platform for confidential real estate investments.",
-        "url": "https://lombardstandard.com",
-        "image": "https://lombst.s3.amazonaws.com/social/icon-rounded.png",
-        "genre": "http://vocab.getty.edu/aat/300265431",
-        "keywords": "PropTech,Information,Marketplace,Commercial,Real Estate"
+        "url": "https://lombardstandard.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://lombardstandard.com/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     </script>
     <script type="application/ld+json">
@@ -57,23 +58,7 @@
         "url": "https://lombardstandard.com",
         "duns": "686281518",
         "email": "info@lomb.st",
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q108829640",
-          "https://www.linkedin.com/company/lombard-standard/",
-          "https://www.crunchbase.com/organization/lombard-standard",
-          "https://suite.endole.co.uk/insight/company/11603047-lombard-standard-ltd",
-          "https://beta.companieshouse.gov.uk/company/11603047",
-          "https://www.proptechmap.com",
-          "https://github.com/LombardStandard",
-          "https://proptechzone.com/startups/lombard-standard/",
-          "https://theorg.com/org/lombard-standard",
-          "https://index.co/company/lombard-standard",
-          "https://www.ricsfirms.com/office/694648/LOMBARD-STANDARD",
-          "https://www.builtworld.com/company/Lombard-Standard",
-          "https://twitter.com/lombardstandard",
-          "https://www.zoominfo.com/c/Lombard-standard/461227178",
-          "https://www.unissu.com/proptech-company/lombard-standard"
-        ],
+        "sameAs": ["https://www.wikidata.org/wiki/Q108829640", "https://www.linkedin.com/company/lombard-standard/", "https://www.crunchbase.com/organization/lombard-standard", "https://suite.endole.co.uk/insight/company/11603047-lombard-standard-ltd", "https://beta.companieshouse.gov.uk/company/11603047", "https://www.proptechmap.com", "https://github.com/LombardStandard", "https://proptechzone.com/startups/lombard-standard/", "https://theorg.com/org/lombard-standard", "https://index.co/company/lombard-standard", "https://www.ricsfirms.com/office/694648/LOMBARD-STANDARD", "https://www.builtworld.com/company/Lombard-Standard", "https://twitter.com/lombardstandard", "https://www.zoominfo.com/c/Lombard-standard/461227178", "https://www.unissu.com/proptech-company/lombard-standard"],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "64 Connaught Road Central",
@@ -87,10 +72,7 @@
           "@type": "Person",
           "givenName": "Alberto MG",
           "familyName": "Saruggia",
-          "sameAs": [
-            "https://www.crunchbase.com/person/alberto-mg-saruggia",
-            "www.linkedin.com/in/alberto-mg-saruggia"
-          ]
+          "sameAs": ["https://www.crunchbase.com/person/alberto-mg-saruggia", "www.linkedin.com/in/alberto-mg-saruggia"]
         },
         "foundingDate": "2018",
         "foundingLocation": {
@@ -134,7 +116,7 @@
         <div class="max-w-7xl mx-auto py-3">
           <div class="flex items-center justify-center flex-wrap text-center">
             <span class="inline-flex flex-wrap sm:text-base texts-sm text-white font-bold items-center justify-center transition-all">
-              <span class="hidden sm:inline-flex">Selected among&nbsp;</span>Top 20&nbsp;<span class="hidden sm:inline-flex">PropTech&nbsp;</span>Marketplace in Europe 2021
+              <span class="hidden sm:inline-flex">Selected among&nbsp;</span>Top 20&nbsp; <span class="hidden sm:inline-flex">PropTech&nbsp;</span>Marketplace in Europe 2021 
               <svg class="h-5 w-5 text-current ml-2">
                 <use xlink:href="img/svgs/solid-external-link.svg#solid-external-link"></use>
               </svg>
@@ -175,14 +157,10 @@
         <div class="rounded-xl bg-gray-100 overflow-hidden max-w-full md:max-w-5xl lg:max-w-7xl mx-auto ">
           <div class="p-6">
             <nav class="grid grid-cols-1 gap-6 place-items-center">
-              <a href="buyers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Buyers
-              </a>
-              <a href="sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Sellers
-              </a>
-              <a href="" class="p-3 rounded-lg bg-blue-700 cursor-not-allowed  transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in
-              </a>
-              <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Request an account
-              </button>
+              <a href="buyers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Buyers </a>
+              <a href="sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Sellers </a>
+              <a href="" class="p-3 rounded-lg bg-blue-700 cursor-not-allowed  transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in </a>
+              <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Request an account </button>
             </nav>
             <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
               <button id="closeRequest" class="text-sm font-bold font-mono text-white hover:bg-gray-300 text-right cursor-pointer rounded-full transition-all float-right bg-gray-400 mx-auto p-1">
@@ -199,11 +177,11 @@
     <div class="opacity-1 pointer-events-none absolute w-full z-50 -mt-px px-4 sm:px-8 md:px-12">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div id="userMenu" class="opacity-0 pointer-events-nonerelative bg-white rounded-b-lg p-4 float-right border border-gray-300">
-          <div class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mb-3 rounded-md text-left"><a href="" class="cursor-not-allowed">Log in</a>
+          <div class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mb-3 rounded-md text-left">
+            <a href="" class="cursor-not-allowed">Log in</a>
           </div>
           <div class="h-px border-b border-gray-300"></div>
-          <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Request an account
-          </div>
+          <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Request an account </div>
         </div>
       </div>
     </div>
@@ -217,9 +195,7 @@
           </div>
           <div class="relative grid justify-items-center">
             <blockquote class="text-center">
-              <h1 class="text-4xl font-bold text-white tracking-tight sm:text-5xl">
-                Confidential real estate investments
-              </h1>
+              <h1 class="text-4xl font-bold text-white tracking-tight sm:text-5xl"> Confidential real estate investments </h1>
               <p class="mt-4 text-xl sm:text-2xl text-gray-400 text-center font-medium">A sourcing platform for commercial properties.</p>
             </blockquote>
             <div class="w-auto hidden sm:flex flex-row space-x-4 my-6 border-b border-gray-500 p-4">
@@ -281,7 +257,9 @@
               <div class="carousel-item h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-sydney-v2.jpg" alt="home-city-sydney">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Sydney<br><span class="text-gray-400 text-base font-light" id="stat_sydney"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Sydney <br>
+                <span class="text-gray-400 text-base font-light" id="stat_sydney"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=US%2C+Miami&currency=USD&zoom=9.49&lat=25.919&lng=-80.388&tags=Layout" target="_blank" class="mr-6 w-60 ">
@@ -289,7 +267,9 @@
               <div class="carousel-item h-28 w-28 rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-miami-v6.png" alt="home-city-miami">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Miami<br><span class="text-gray-400 text-base font-light" id="stat_miami"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Miami <br>
+                <span class="text-gray-400 text-base font-light" id="stat_miami"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=Japan%2C%20Tokyo&currency=JPY&zoom=7.61" target="_blank" class="mr-6 w-60">
@@ -297,7 +277,9 @@
               <div class="carousel-item h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-tokyo.jpg" alt="home-city-tokyo">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Tokyo<br><span class="text-gray-400 text-base font-light" id="stat_tokyo"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Tokyo <br>
+                <span class="text-gray-400 text-base font-light" id="stat_tokyo"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=Australia%2C+Canberra&currency=AUD&zoom=9.64&lat=-35.286&lng=149.110&tags=Layout" target="_blank" class="mr-6 w-60 ">
@@ -305,7 +287,9 @@
               <div class="h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-canberra.png" alt="home-city-canberra">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Canberra<br><span class="text-gray-400 text-base font-light" id="stat_canberra"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Canberra <br>
+                <span class="text-gray-400 text-base font-light" id="stat_canberra"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=Germany%2C+Berlin&currency=EUR&zoom=8.26&tags=Layout&lat=52.527&lng=13.485" target="_blank" class="mr-6 w-60 ">
@@ -313,7 +297,9 @@
               <div class="h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-berlin-v2.png" alt="home-city-berlin">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Berlin<br><span class="text-gray-400 text-base font-light" id="stat_berlin"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Berlin <br>
+                <span class="text-gray-400 text-base font-light" id="stat_berlin"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=US%2C%20New%20York&currency=USD&zoom=7.61" target="_blank" class="mr-6 w-60 ">
@@ -321,7 +307,9 @@
               <div class="h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-newyork.jpg" alt="home-city-newyork">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">New York<br><span class="text-gray-400 text-base font-light" id="stat_newyork"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">New York <br>
+                <span class="text-gray-400 text-base font-light" id="stat_newyork"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=UK%2C%20London&currency=GBP&zoom=7.61" target="_blank" class="mr-6 w-60 ">
@@ -329,7 +317,9 @@
               <div class="carousel-item h-28 w-28 rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-london.jpg" alt="home-city-london">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">London<br><span class="text-gray-400 text-base font-light" id="stat_london"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">London <br>
+                <span class="text-gray-400 text-base font-light" id="stat_london"></span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=Singapore&currency=SGD&zoom=9.77&tags=Layout&lat=1.444&lng=103.833" target="_blank" class="mr-6 w-60 ">
@@ -337,7 +327,9 @@
               <div class="h-28 w-auto rounded-xl">
                 <img class="h-full w-auto rounded-xl" src="https://cdn.lomb.st/website/home-city-singapore-v3.png" alt="home-city-singapore">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900">Singapore<br><span class="text-gray-400 text-base font-light" id="stat_singapore"></span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900">Singapore <br>
+                <span class="text-gray-400 text-base font-light" id="stat_singapore"></span>
+              </p>
             </div>
           </a>
         </div>
@@ -347,8 +339,7 @@
     <div class="py-16 px-4 sm:px-8 md:px-12">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div>
-          <h2 class="text-2xl font-light text-gray-900 tracking-tight sm:text-3xl mb-4 sm:mb-8">Asset types
-          </h2>
+          <h2 class="text-2xl font-light text-gray-900 tracking-tight sm:text-3xl mb-4 sm:mb-8">Asset types </h2>
         </div>
         <div class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": 5000 }'>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Office" target="_blank" class="mr-6 ">
@@ -356,7 +347,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-office.jpg" class="rounded-xl w-full h-full" alt="home-type-office">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Office<br><span class="text-gray-400 text-base font-light" id="stat1">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Office <br>
+                <span class="text-gray-400 text-base font-light" id="stat1">&nbsp;</span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Hotel" target="_blank" class="mr-6">
@@ -364,7 +357,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-hotel.jpg" class="rounded-xl w-full h-full" alt="home-type-hotel">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Hotel<br><span class="text-gray-400 text-base font-light" id="stat2">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Hotel <br>
+                <span class="text-gray-400 text-base font-light" id="stat2">&nbsp;</span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Retail" target="_blank" class="mr-6">
@@ -372,7 +367,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-retail.jpg" class="rounded-xl w-full h-full" alt="home-type-retail">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Retail<br><span class="text-gray-400 text-base font-light" id="stat4">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Retail <br>
+                <span class="text-gray-400 text-base font-light" id="stat4">&nbsp;</span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Mixed-use" target="_blank" class="mr-6">
@@ -380,7 +377,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-mixed.png" class="rounded-xl w-full h-full" alt="home-type-mixed">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Mixed-use<br><span class="text-gray-400 text-base font-light" id="stat6">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Mixed-use <br>
+                <span class="text-gray-400 text-base font-light" id="stat6">&nbsp;</span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&tags=Layout&zoom=1.00&lat=1.537&lng=85.268&types=Residential" target="_blank" class="mr-6">
@@ -388,7 +387,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-residential.png" class="rounded-xl w-full h-full" alt="home-type-residential">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Residential<br><span class="text-gray-400 text-base font-light" id="stat3">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Residential <br>
+                <span class="text-gray-400 text-base font-light" id="stat3">&nbsp;</span>
+              </p>
             </div>
           </a>
           <a href="https://app.lombardstandard.com/?location=null&currency=USD&zoom=1.00&lat=-44.892&lng=120.358&types=Industrial" target="_blank" class="mr-6">
@@ -396,7 +397,9 @@
               <div class="overflow-hidden rounded-xl w-80 h-80">
                 <img src="https://cdn.lomb.st/website/home-type-industrial.jpg" class="rounded-xl w-full h-full" alt="home-type-industrial">
               </div>
-              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Industrial<br><span class="text-gray-400 text-base font-light" id="stat5">&nbsp;</span></p>
+              <p class="text-xl leading-6 font-extrabold text-gray-900 mt-4 text-center">Industrial <br>
+                <span class="text-gray-400 text-base font-light" id="stat5">&nbsp;</span>
+              </p>
             </div>
           </a>
         </div>
@@ -415,9 +418,7 @@
               <h2 class="text-4xl font-extrabold">Become a seller</h2>
               <p class="text-gray-400 mt-1 text-xl font-medium">And increase your lead generation.</p>
               <div class="mt-6">
-                <a href="sellers" target="_self" class="inline-flex px-3 py-2 text-sm font-bold rounded-lg text-white bg-blue-700 hover:bg-blue-800 tracking-tight transition-all">
-                READ MORE
-                </a>
+                <a href="sellers" target="_self" class="inline-flex px-3 py-2 text-sm font-bold rounded-lg text-white bg-blue-700 hover:bg-blue-800 tracking-tight transition-all"> READ MORE </a>
               </div>
             </blockquote>
           </div>
@@ -460,37 +461,27 @@
               <div>
                 <ul class="mt-4 space-y-4 transition-all text-base text-gray-400 ">
                   <li>
-                    <a href="buyers" target="_self" class="hover:text-blue-700">
-                    Buyers
-                    </a>
+                    <a href="buyers" target="_self" class="hover:text-blue-700"> Buyers </a>
                   </li>
                   <li>
-                    <a href="sellers" target="_self" class="hover:text-blue-700">
-                    Sellers
-                    </a>
+                    <a href="sellers" target="_self" class="hover:text-blue-700"> Sellers </a>
                   </li>
                   <li>
-                    <a href="about-us" target="_self" class="hover:text-blue-700">
-                    About us
-                    </a>
+                    <a href="about-us" target="_self" class="hover:text-blue-700"> About us </a>
                   </li>
                 </ul>
               </div>
               <div>
                 <ul class="mt-4 space-y-4 text-gray-400 text-base transition-all">
                   <li>
-                    <a href="https://app.lombardstandard.com/" target="_self" class="hover:text-blue-700 ">
-                    Marketplace
-                    </a>
+                    <a href="https://app.lombardstandard.com/" target="_self" class="hover:text-blue-700 "> Marketplace </a>
                   </li>
                   <li>
                     <a href="" class="cursor-default items-center flex">News <span class="ml-2 rounded-full px-2 py-0.5 text-center text-xs font-bold text-blue-700 align-middle border border-blue-700 ">soon</span>
                     </a>
                   </li>
                   <li>
-                    <a href="contact" target="_self" class="hover:text-blue-700">
-                    Contact
-                    </a>
+                    <a href="contact" target="_self" class="hover:text-blue-700"> Contact </a>
                   </li>
                 </ul>
               </div>
@@ -516,10 +507,10 @@
             </a>
           </div>
           <div class="flex sm:flex-row flex-col space-y-2 space-x-0 sm:space-y-0 sm:space-x-3 mt-8 md:mt-0 cursor-default md:order-1 text-gray-400 text-xs">
-            <p>&copy; <span id=copyright></span> Lombard Standard</p>
+            <p>&copy; <span id=copyright></span> Lombard Standard </p>
             <p class="hidden sm:block">|</p>
             <a href="https://rics.org/" target="_blank" class="inline-flex items-center hover:text-blue-700 cursor-pointer transition-all h-4">
-              Regulated by RICS
+              Regulated by RICS 
               <svg class="h-4 w-4 text-current ml-1">
                 <use xlink:href="img/svgs/solid-external-link.svg#solid-external-link"></use>
               </svg>
@@ -604,46 +595,47 @@
       }
     </script>
     <script async>
-      loadJSON(
-        "https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_curr.json",
-        function(dataCurr) {
-          loadJSON(
-            "https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_prev.json",
-            function(dataPrev) {
-              const prev = dataPrev;
-              const curr = dataCurr;
-              // by type
-              var new1 = curr.totalsClass.office;
-              document.getElementById("stat1").innerHTML = new1 + " assets";
-              var new2 = curr.totalsClass.hotel;
-              document.getElementById("stat2").innerHTML = new2 + " assets";
-              var new3 = curr.totalsClass.residential;
-              document.getElementById("stat3").innerHTML = new3 + " assets";
-              var new4 = curr.totalsClass.retail;
-              document.getElementById("stat4").innerHTML = new4 + " assets";
-              var new5 = curr.totalsClass.industrial;
-              document.getElementById("stat5").innerHTML = new5 + " assets";
-              var new6 = curr.totalsClass.mixed;
-              document.getElementById("stat6").innerHTML = new6 + " assets";
-              // hot markets
-              // add more cities by using id stat_<cityname> (remove all spaces in <cityname> i.e. stat_newyork instead of stat_new_york)
-              const totalsCity = curr.totalsCity || {};
-              Object.entries(totalsCity).forEach(kv => {
-                const newData = kv[1];
-                const city = kv[0].replace(/\s/g, '').toLowerCase();
-                // remove spaces i.e. new york => newyork
-                const element = document.getElementById("stat_" + city);
-                if (element) {
-                  element.innerHTML = newData + " assets";
-                }
-              });
-            })
+      loadJSON("https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_curr.json", function(dataCurr) {
+        loadJSON("https://lombst.s3.amazonaws.com/export/mtd/buyers/website_analytics_prev.json", function(dataPrev) {
+          const prev = dataPrev;
+          const curr = dataCurr;
+          // by type
+          var new1 = curr.totalsClass.office;
+          document.getElementById("stat1").innerHTML = new1 + " assets";
+          var new2 = curr.totalsClass.hotel;
+          document.getElementById("stat2").innerHTML = new2 + " assets";
+          var new3 = curr.totalsClass.residential;
+          document.getElementById("stat3").innerHTML = new3 + " assets";
+          var new4 = curr.totalsClass.retail;
+          document.getElementById("stat4").innerHTML = new4 + " assets";
+          var new5 = curr.totalsClass.industrial;
+          document.getElementById("stat5").innerHTML = new5 + " assets";
+          var new6 = curr.totalsClass.mixed;
+          document.getElementById("stat6").innerHTML = new6 + " assets";
+          // hot markets
+          // add more cities by using id stat_
+          < cityname > (remove all spaces in < cityname > i.e.stat_newyork instead of stat_new_york)
+          const totalsCity = curr.totalsCity || {};
+          Object.entries(totalsCity).forEach(kv => {
+            const newData = kv[1];
+            const city = kv[0].replace(/\s/g, '').toLowerCase();
+            // remove spaces i.e. new york => newyork
+            const element = document.getElementById("stat_" + city);
+            if (element) {
+              element.innerHTML = newData + " assets";
+            }
+          });
         })
+      })
     </script>
     <noscript>
       <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3365265&fmt=gif">
     </noscript>
     <!-- Cookie Consent -->
-    <script src="https://cookieinfoscript.com/js/cookieinfo.min.js" id="cookieinfo" data-close-text="OK" data-font-size="14px" data-message="<svg class='inline h-5 w-5 text-gray-900 mr-2'><use href='img/svgs/solid-eye.svg#solid-eye'></svg>By viewing this website you agree with our" data-link="#111827" data-linkmsg="<strong>privacy policy</strong>" data-moreinfo="https://lombardstandard.com/legal" data-text-align="left" data-bg="#FEF3C7" data-cookie="Lombard Standard Analytics"></script>
+    <script src="https://cookieinfoscript.com/js/cookieinfo.min.js" id="cookieinfo" data-close-text="OK" data-font-size="14px" data-message="
+      <svg class='inline h-5 w-5 text-gray-900 mr-2'>
+      <use href='img/svgs/solid-eye.svg#solid-eye'>
+      </svg>By viewing this website you agree with our" data-link="#111827" data-linkmsg="
+      <strong>privacy policy</strong>" data-moreinfo="https://lombardstandard.com/legal" data-text-align="left" data-bg="#FEF3C7" data-cookie="Lombard Standard Analytics"></script>
   </body>
 </html>
