@@ -446,11 +446,14 @@
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
         document.getElementById(tabName).style.display = "block";
+        window.location.hash = '#'tabName;
         evt.currentTarget.className += " active";
+        
       }
       document.getElementById("defaultOpen").click();
       document.getElementById("copyPrivacy").addEventListener("click", copyClipboard1);
       document.getElementById("copyTerms").addEventListener("click", copyClipboard2);
+    
       
       function copyClipboard1() {
         var copyText = document.getElementById("Privacy");
