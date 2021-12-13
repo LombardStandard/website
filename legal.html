@@ -452,13 +452,11 @@
       document.getElementById("copyPrivacy").addEventListener("click", copyClipboard1);
       document.getElementById("copyTerms").addEventListener("click", copyClipboard2);
       
-      document.addEventListener("load", function() {
       var hash = window.location.hash
-      if (hash == '#terms') {document.getElementById("openTerms").click();}
+      if (hash === '#terms') {document.getElementById("openTerms").click();}
       if (hash == '#privacy') {document.getElementById("openPrivacy").click();}
       else {document.getElementById("openPrivacy").click();}
  
-    });
       
       function copyClipboard1() {
         var copyText = document.getElementById("Privacy");
