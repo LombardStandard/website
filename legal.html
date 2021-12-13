@@ -456,7 +456,7 @@
       var hash = window.location.hash
       if (hash == '#terms') {document.getElementById("openTerms").click();}
       if (hash == '#privacy') {document.getElementById("openPrivacy").click();}
-      if (hash == '')  {document.getElementById("openPrivacy").click();}
+      if (!hash)  {document.getElementById("openPrivacy").click();}
  
     });
       
