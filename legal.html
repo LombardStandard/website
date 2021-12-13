@@ -155,8 +155,8 @@
     <div class="pt-16 pb-16 px-4 sm:px-8 md:px-12 ">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="tab flex sm:flex-row sm:space-x-6 pb-2 justify-start flex-col space-y-4 space-x-0 sm:space-y-0 border-b border-gray-300 ">
-          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Privacy')" id="defaultOpen">Privacy Policy</button>
-          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Terms')">Terms of Service</button>
+          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Privacy')" id="Privacy">Privacy Policy</button>
+          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Terms')" id="Terms">Terms of Service</button>
         </div>
         <div>
           <div id="Privacy" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-gray-100 text-gray-900 taext-sm">
@@ -449,7 +449,8 @@
         evt.currentTarget.className += " active";
         window.location.hash = '#' + tabName;
       }
-      document.getElementById("defaultOpen").click();
+      if (window.location.hash = '#terms') {document.getElementById("Terms").click();}
+      if (window.location.hash = '#privacy') {document.getElementById("Privacy").click();}
       document.getElementById("copyPrivacy").addEventListener("click", copyClipboard1);
       document.getElementById("copyTerms").addEventListener("click", copyClipboard2);
     
