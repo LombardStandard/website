@@ -449,8 +449,9 @@
         evt.currentTarget.className += " active";
         window.location.hash = '#' + tabName;
       }
-      if (window.location.hash = '#terms') {document.getElementById("Terms").click();}
-      if (window.location.hash = '#privacy') {document.getElementById("Privacy").click();}
+      var hash = window.location.hash
+      if (hash == '#terms') {document.getElementById("Terms").click();}
+      if (hash == '#privacy') {document.getElementById("Privacy").click();}
       document.getElementById("copyPrivacy").addEventListener("click", copyClipboard1);
       document.getElementById("copyTerms").addEventListener("click", copyClipboard2);
     
