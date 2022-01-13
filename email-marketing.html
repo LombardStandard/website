@@ -29,10 +29,10 @@
       width: 10px;
       height: 10px;
       opacity: 1;
-      background: #D1D5DB;
+      background: #9CA3AF;
       }
       .flickity-page-dots .dot.is-selected {
-      background: #1D4ED8;
+      background: #111827;
       }
     </style>
   </head>
@@ -63,7 +63,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
                   </svg>
-                  <span class="ml-3 text-base text-gray-500">Unlimited filters and custom fields</span>
+                  <span class="ml-3 text-base text-gray-500">Filters and automation rules</span>
                 </li>
                 <li class="py-4 flex">
                   <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 h-6 w-6 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
@@ -665,28 +665,28 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-900 bg-opacity-80 fixed z-10 inset-0 overflow-y-auto" id="overlay">
+    <div class="bg-gray-900 bg-opacity-80 fixed z-10 inset-0 overflow-y-auto transition-all " id="overlay">
       <div class="max-w-7xl mx-auto px-4 sm:px-20 lg:px-32 pt-12">
-        <div class="max-w-lg mx-auto lg:max-w-none rounded-lg bg-white p-4 flex flex-col justify-end">
-          <svg id="overlayOff" class="h-6 w-6 text-gray-900 relative right-0 bg-gray-200 p-1 transition-all hover:bg-white rounded-full mb-6 text-right cursor-pointer">
+        <div class="max-w-lg mx-auto lg:max-w-none rounded-lg bg-white p-4 grid">
+          <svg id="overlayOff" class="place-self-end h-6 w-6 text-gray-900 bg-gray-100 p-1 m-2 transition-all hover:bg-white rounded-full mb-6 cursor-pointer">
             <use xlink:href="img/svgs/outline-close.svg#outline-close"></use>
           </svg>
           <div class="carousel rounded-lg" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true  }'>
             <div class="carousel-item px-2">
               <img src="https://cdn.lomb.st/mailserv/analytics.png" class="w-full h-full object-cover object-top rounded-lg">
-              <p class="text-gray-900 text-center pt-3">Campaign analytics</p>
+              <p class="text-blue-700 bg-blue-50 rounded-md my-3 mx-2 text-sm text-center p-2">Campaign analytics</p>
             </div>
             <div class="carousel-item px-2">
               <img src="https://cdn.lomb.st/mailserv/templates.png" class="w-full h-full object-cover object-top rounded-lg">
-              <p class="text-gray-900 text-center pt-3">HMTL Editor</p>
+              <p class="text-blue-700 bg-blue-50 rounded-md my-3 mx-2 text-sm text-center p-2">HMTL Editor</p>
             </div>
             <div class="carousel-item px-2">
               <img src="https://cdn.lomb.st/mailserv/rules.png" class="w-full h-full object-cover object-top rounded-lg">
-              <p class="text-gray-900 text-center pt-3">Rules</p>
+              <p class="text-blue-700 bg-blue-50 rounded-md my-3 mx-2 text-sm text-center p-2">Automation rules</p>
             </div>
             <div class="carousel-item px-2">
               <img src="https://cdn.lomb.st/mailserv/contacts.png" class="w-full h-full object-cover object-top rounded-lg">
-              <p class="text-gray-900 text-center pt-3">Contacts</p>
+              <p class="text-blue-700 bg-blue-50 rounded-md my-3 mx-2 text-sm text-center p-2">Contact lists</p>
             </div>
           </div>
           <div class="p-2">&nbsp;</div>
