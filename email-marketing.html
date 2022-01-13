@@ -673,12 +673,20 @@
           </svg>
           <div class="carousel rounded-lg" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": true, "wrapAround": true  }'>
             <div class="carousel-item px-2">
-              <img src="https://cdn.lomb.st/mailserv/Report+1.png" class="w-full h-full object-cover object-top rounded-lg">
+              <img src="https://cdn.lomb.st/mailserv/analytics.png" class="w-full h-full object-cover object-top rounded-lg">
               <p class="text-gray-900 text-center pt-3">Campaign analytics</p>
             </div>
             <div class="carousel-item px-2">
-              <img src="https://cdn.lomb.st/mailserv/New+Campaign.png" class="w-full h-full object-cover object-top rounded-lg">
+              <img src="https://cdn.lomb.st/mailserv/templates.png" class="w-full h-full object-cover object-top rounded-lg">
               <p class="text-gray-900 text-center pt-3">HMTL Editor</p>
+            </div>
+            <div class="carousel-item px-2">
+              <img src="https://cdn.lomb.st/mailserv/rules.png" class="w-full h-full object-cover object-top rounded-lg">
+              <p class="text-gray-900 text-center pt-3">Rules</p>
+            </div>
+            <div class="carousel-item px-2">
+              <img src="https://cdn.lomb.st/mailserv/contacts.png" class="w-full h-full object-cover object-top rounded-lg">
+              <p class="text-gray-900 text-center pt-3">Contacts</p>
             </div>
           </div>
           <div class="p-2">&nbsp;</div>
@@ -695,6 +703,11 @@
       document.getElementById("overlay").style.opacity = 1
       document.getElementById("overlay").style.pointerEvents = "auto"
       })
+        
+      document.getElementById("overlayOff").addEventListener("click", function() {
+      document.getElementById("overlay").style.opacity = 0
+      document.getElementById("overlay").style.pointerEvents = "none"
+      })      
         
     </script>
   </body>
