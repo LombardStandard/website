@@ -106,9 +106,9 @@
               </a>
               <a href="sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Sellers
               </a>
-              <a href="" class="p-3 rounded-lg bg-blue-700 cursor-not-allowed transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in
+              <a href="https://app.lombardstandard.com/userarea/" class="p-3 rounded-lg bg-blue-700 hover:bg-blue-800 cursor-pointer transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in
               </a>
-              <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Request an account
+              <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Become a seller
               </button>
             </nav>
             <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
@@ -126,10 +126,10 @@
     <div class="opacity-1 pointer-events-none absolute w-full z-50 -mt-px px-4 sm:px-8 md:px-12">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div id="userMenu" class="opacity-0 pointer-events-nonerelative bg-white rounded-b-lg p-4 float-right border border-gray-300">
-          <div class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mb-3 rounded-md text-left"><a href="" class="cursor-not-allowed">Log in</a>
+          <div class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mb-3 hover:bg-gray-100 hover:text-blue-700 rounded-md text-left"><a href="https://app.lombardstandard.com/userarea/" class="cursor-pointer">Log in</a>
           </div>
           <div class="h-px border-b border-gray-300"></div>
-          <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Request an account
+          <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Become a seller
           </div>
         </div>
       </div>
@@ -530,7 +530,7 @@
             document.getElementById("requestButton").style.background = "#D1D5DB";
             document.getElementById("requestButton").style.color = "#111827";
             document.getElementById("requestButton").style.pointerEvents = "auto";
-            document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+            document.getElementById("requestButton").innerHTML = "BECOME A SELLER";
           }
         });
       });
