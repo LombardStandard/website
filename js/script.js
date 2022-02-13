@@ -17,7 +17,7 @@ document.getElementById("closeRequest").addEventListener("click", function() {
     document.getElementById("requestButton").style.background = "#D1D5DB";
     document.getElementById("requestButton").style.color = "#111827";
     document.getElementById("requestButton").style.pointerEvents = "auto";
-    document.getElementById("requestButton").innerHTML = "REQUEST AN ACCOUNT";
+    document.getElementById("requestButton").innerHTML = "BECOME A SELLER";
 });
 
 window.onresize = closeMenuResize;
