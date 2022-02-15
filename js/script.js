@@ -2,31 +2,11 @@ var d = new Date();
 var n = d.getFullYear();
 document.getElementById("copyright").innerHTML = n;
 
-
-document.getElementById("requestButton").addEventListener("click", function() {
-    document.getElementById("requestMobile").style.display = "block";
-    document.getElementById("requestButton").style.background = "transparent";
-    document.getElementById("requestButton").style.color = "#1D4ED8";
-    document.getElementById("requestButton").style.pointerEvents = "none";
-    document.getElementById("requestButton").innerHTML =
-        "Fill in your details, we'll be in touch.";
-});
-
-document.getElementById("closeRequest").addEventListener("click", function() {
-    document.getElementById("requestMobile").style.display = "none";
-    document.getElementById("requestButton").style.background = "#D1D5DB";
-    document.getElementById("requestButton").style.color = "#111827";
-    document.getElementById("requestButton").style.pointerEvents = "auto";
-    document.getElementById("requestButton").innerHTML = "BECOME A SELLER";
-});
-
 window.onresize = closeMenuResize;
 
 function closeMenuResize() {
     document.getElementById("mobileMenu").style.opacity = 0;
     document.getElementById("mobileMenu").style.pointerEvents = "none";
-    document.getElementById("userMenu").style.opacity = 0;
-    document.getElementById("userMenu").style.pointerEvents = "none";
 }
 
 _linkedin_partner_id = "3365265";
