@@ -405,26 +405,8 @@
       <div class="bg-white border-b border-gray-300">
         <div class="flex flex-row max-w-7xl mx-auto py-3 px-4 sm:px-8 md:px-12 justify-end">
           <div class="flex">
-            <div onclick="overlayOn()" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-700 px-3 py-2 uppercase cursor-pointer">Become a seller
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Overlay -->
-    <div id="overlay" class="fixed z-50 inset-0 overflow-y-auto block transition-all opacity-0 pointer-events-none">
-      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center block">
-        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity"></div>
-        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-        <div>
-          <div class="relative text-center bg-white text-gray-900 text-base p-3 rounded-xl mt-20 mb-6 ">Fill in your details, we'll be in touch.</div>
-          <div id="requestDesktop" class="relative self-center bg-gray-300 rounded-xl max-w-3/4 pt-6 px-6 mx-auto">
-            <button onclick="overlayOff()" class="text-sm font-bold font-mono text-white hover:bg-gray-300 text-right cursor-pointer rounded-full transition-all float-right bg-gray-400 mx-auto p-1">
-              <svg class="h-5 w-5 text-white inline self-center">
-                <use xlink:href="img/svgs/outline-close.svg#outline-close"></use>
-              </svg>
-            </button>
-            <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full bg-transparent" style="height:540px; background:transparent !important"></iframe>
+            <a href="https://lombardstandard.com/contact" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 hover:text-white hover:bg-blue-700 px-3 py-2 uppercase cursor-pointer">Become a seller
+            </a>
           </div>
         </div>
       </div>
@@ -519,17 +501,6 @@
     </footer>
     <!-- JavaScript -->
     <script src="js/script.js"></script>
-    <script>
-      function overlayOn() {
-      	document.getElementById("overlay").style.opacity = 1;
-      	document.getElementById("overlay").style.pointerEvents = "auto";
-      }
-      
-      function overlayOff() {
-      	document.getElementById("overlay").style.opacity = 0;
-      	document.getElementById("overlay").style.pointerEvents = "none";
-      }
-    </script>
     <script>
       document.addEventListener('scroll', onScroll);
       
