@@ -151,7 +151,7 @@
           <a href="sellers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">Sellers</a>
         </nav>
         <div class="hidden md:inline justify-self-end">
-           <a href="sellers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition mr-4">Become a seller</a>
+           <a href="https://lombardstandard.com/contact" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition mr-4">Become a seller</a>
           <a href="https://app.lombardstandard.com/userarea/" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 cursor-pointer px-3 py-2 hover:bg-blue-700 hover:text-white uppercase">Log in
           </a>
         </div>
@@ -164,7 +164,7 @@
               <a href="buyers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Buyers </a>
               <a href="sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Sellers </a>
               <a href="https://app.lombardstandard.com/userarea/" class="p-3 rounded-lg bg-blue-700 cursor-pointer hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in </a>
-              <button id="requestButton" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Become a seller</button>
+              <a href="https://lombardstandard.com/contact" target="_self" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Become a seller</a>
             </nav>
             <div id="requestMobile" class="relative self-center bg-gray-300 rounded-xl w-full mt-6 pt-6 px-6 hidden">
               <button id="closeRequest" class="text-sm font-bold font-mono text-white hover:bg-gray-300 text-right cursor-pointer rounded-full transition-all float-right bg-gray-400 mx-auto p-1">
@@ -175,17 +175,6 @@
               <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full bg-transparent" style="height:540px; background:transparent !important"></iframe>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="opacity-1 pointer-events-none absolute w-full z-50 -mt-px px-4 sm:px-8 md:px-12">
-      <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
-        <div id="userMenu" class="opacity-0 pointer-events-none relative bg-white rounded-b-lg p-4 float-right border border-gray-300">
-          <div class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mb-3 hover:bg-gray-100 hover:text-blue-700 rounded-md text-left">
-            <a href="https://app.lombardstandard.com/userarea/" class="cursor-pointer">Log in</a>
-          </div>
-          <div class="h-px border-b border-gray-300"></div>
-          <div id="overlayOn" class="tracking-tight transition-all text-xs font-light p-2 text-gray-900 mt-3 hover:bg-gray-100 hover:text-blue-700 rounded-md cursor-pointer text-left">Become a seller</div>
         </div>
       </div>
     </div>
@@ -429,24 +418,6 @@
         </div>
       </div>
     </div>
-    <!-- Overlay -->
-    <div id="overlay" class="fixed z-50 inset-0 overflow-y-auto md:block hidden transition-all opacity-0 pointer-events-none">
-      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center block">
-        <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity"></div>
-        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-        <div>
-          <div class="relative text-center bg-white text-gray-900 text-base p-3 rounded-xl mt-20 mb-6 ">Fill in your details, we'll be in touch.</div>
-          <div class="relative self-center bg-gray-300 rounded-xl max-w-3/4 pt-6 px-6 mx-auto">
-            <button id="overlayOff" class="text-sm font-bold font-mono text-white hover:bg-gray-300 text-right cursor-pointer rounded-full transition-all float-right bg-gray-400 mx-auto p-1">
-              <svg class="h-5 w-5 text-white inline self-center">
-                <use xlink:href="img/svgs/outline-close.svg#outline-close"></use>
-              </svg>
-            </button>
-            <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full bg-transparent" style="height:540px; background:transparent !important"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Footer -->
     <footer class="pt-16 pb-6 px-4 sm:px-8 md:px-12">
       <div class="relative border-t border-gray-300 max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
@@ -528,35 +499,8 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script>
-      document.getElementById("overlayOn").addEventListener("click", function() {
-        document.getElementById("userMenu").style.opacity = 0;
-        document.getElementById("userMenu").style.pointerEvents = "none";
-        setTimeout(function() {
-          document.getElementById("overlay").style.opacity = 1;
-          document.getElementById("overlay").style.pointerEvents = "auto";
-        }, 500);
-      });
-      document.getElementById("overlayOff").addEventListener("click", function() {
-        document.getElementById("overlay").style.opacity = 0;
-        document.getElementById("overlay").style.pointerEvents = "none";
-      });
-      document.addEventListener("mouseup", function(e) {
-        var container1 = document.getElementById("userMenu");
-        if (!container1.contains(e.target)) {
-          container1.style.opacity = 0;
-          container1.style.pointerEvents = "none";
-        }
-        document.getElementById("user").addEventListener("click", function() {
-          var userMenuOpacity = document.getElementById("userMenu").style.opacity;
-          if (userMenuOpacity == 0) {
-            document.getElementById("userMenu").style.opacity = 1;
-            document.getElementById("userMenu").style.pointerEvents = "auto";
-          } else {
-            document.getElementById("userMenu").style.opacity = 0;
-            document.getElementById("userMenu").style.pointerEvents = "none";
-          }
-        });
-      });
+
+
       document.addEventListener("mouseup", function(e) {
         var container2 = document.getElementById("mobileMenu");
         if (!container2.contains(e.target)) {
@@ -574,11 +518,6 @@
             document.getElementById("mobileMenu").style.transform = "scale(0.9,0.9)";
             document.getElementById("mobileMenu").style.opacity = 0;
             document.getElementById("mobileMenu").style.pointerEvents = "none";
-            document.getElementById("requestMobile").style.display = "none";
-            document.getElementById("requestButton").style.background = "#D1D5DB";
-            document.getElementById("requestButton").style.color = "#111827";
-            document.getElementById("requestButton").style.pointerEvents = "auto";
-            document.getElementById("requestButton").innerHTML = "BECOME A SELLER";
           }
         });
       });
