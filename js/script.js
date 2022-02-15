@@ -23,8 +23,8 @@ document.getElementById("closeRequest").addEventListener("click", function() {
 window.onresize = closeMenuResize;
 
 function closeMenuResize() {
-    document.getElementById("overlay").style.opacity = 0;
-    document.getElementById("overlay").style.pointerEvents = "none";
+    document.getElementById("mobileMenu").style.opacity = 0;
+    document.getElementById("mobileMenu").style.pointerEvents = "none";
     document.getElementById("userMenu").style.opacity = 0;
     document.getElementById("userMenu").style.pointerEvents = "none";
 }
