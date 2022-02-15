@@ -491,13 +491,6 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script>
-      window.onresize = closeMenuResize;
-
-    function closeMenuResize() {
-    document.getElementById("mobileMenu").style.opacity = 0;
-    document.getElementById("mobileMenu").style.pointerEvents = "none";
-    }
-
       document.addEventListener("mouseup", function(e) {
         var container2 = document.getElementById("mobileMenu");
         if (!container2.contains(e.target)) {
