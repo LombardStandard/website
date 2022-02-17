@@ -71,8 +71,8 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="relative z-50 px-4 sm:px-8 md:px-12">
-      <div class="flex flex-row justify-between grid-cols-none md:grid md:grid-cols-3 items-center py-8 relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto md:border-b md:border-gray-300 border-b-0">
+    <div class="relative z-50 px-4 sm:px-8 md:px-12 bg-gray-50">
+      <div class="flex flex-row justify-between grid-cols-none md:grid md:grid-cols-3 items-center py-8 relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="flex">
           <a href="/" target="_self">
             <svg class="h-8 w-28">
@@ -92,7 +92,7 @@
           <a href="sellers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">Sellers</a>
         </nav>
         <div class="hidden md:inline justify-self-end">
-          <a href="https://app.lombardstandard.com/userarea/" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 cursor-pointer px-3 py-2 hover:bg-blue-700 hover:text-white uppercase">Log in
+          <a href="https://app.lombardstandard.com/userarea/" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 cursor-pointer px-3 py-2 hover:bg-blue-700 hover:text-white uppercase bg-white">Log in
           </a>
         </div>
       </div>
@@ -113,7 +113,7 @@
       </div>
     </div>
     <!-- Form -->
-    <div class="py-16 px-4 sm:px-8 md:px-12">
+    <div class="pt-16 pb-32 px-4 sm:px-8 md:px-12 bg-gray-50">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="flex flex-col md:grid md:grid-cols-2 ">
           <div class="flex items-top pr-12 md:mb-0 mb-16">
@@ -173,85 +173,16 @@
               </p>
             </div>
           </div>
-          <div class="relative self-center bg-gray-100 rounded-xl w-full">
-            <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full p-6 bg-transparent" style="height:645px; background:transparent !important"></iframe>        
+          <div class="relative self-center bg-white rounded-xl w-full shadow-lg">
+            <iframe src="https://app.lombardstandard.com/supportForm/" class="w-full p-6" style="height:645px;"></iframe>        
           </div>
         </div>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="pt-16 pb-6 px-4 sm:px-8 md:px-12">
-      <div class="relative border-t border-gray-300 max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
-        <div class="my-16 md:my-12 md:grid md:grid-cols-2 md:gap-8 ">
-          <div class="col-span-1 pb-12 md:pb-8">
-            <div class="flex">
-              <a href="/" target="_self" >
-                <svg class="h-8 w-28">
-                  <use xlink:href="img/svgs/icon-lombst.svg#logo-ls-dark"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-span-1">
-            <div class="grid grid-cols-2 gap-8 sm:grid sm:grid-cols-2 sm:gap-8">
-              <div>
-                <ul class="mt-4 space-y-4 transition-all text-base text-gray-400 ">
-                  <li>
-                    <a href="buyers" target="_self" class="hover:text-blue-700">
-                    Buyers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="sellers" target="_self" class="hover:text-blue-700">
-                    Sellers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about-us" target="_self" class="hover:text-blue-700">
-                    About us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul class="mt-4 space-y-4 text-gray-400 text-base transition-all">
-                  <li>
-                    <a href="https://app.lombardstandard.com/" target="_self" class="hover:text-blue-700 ">
-                    Marketplace
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="cursor-default items-center flex">News <span class="ml-2 rounded-full px-2 py-0.5 text-center text-xs font-bold text-yellow-700 align-middle border border-yellow-700 ">soon</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact" target="_self" class="hover:text-blue-700">
-                    Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer class="pb-6 px-4 sm:px-8 md:px-12 border-t border-gray-300">
+      <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="mt-8 pt-8 md:flex md:items-center md:justify-between">
-          <div class="flex space-x-6 md:order-2">
-            <a href="https://linkedin.com/company/lombard-standard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-linkedin.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-            <a href="https://twitter.com/lombardstandard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-twitter.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a href="https://github.com/LombardStandard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-github.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
           <div class="flex sm:flex-row flex-col space-y-2 space-x-0 sm:space-y-0 sm:space-x-3 mt-8 md:mt-0 cursor-default md:order-1 text-gray-400 text-xs">
             <p>&copy; <span id=copyright></span> Lombard Standard</p>
             <p class="hidden sm:block">|</p>
