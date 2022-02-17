@@ -74,8 +74,8 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="relative z-50 px-4 sm:px-8 md:px-12">
-      <div class="flex flex-row justify-between grid-cols-none md:grid md:grid-cols-3 items-center py-8 relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto md:border-b md:border-gray-300 border-b-0">
+    <div class="relative z-50 px-4 sm:px-8 md:px-12 bg-gray-50">
+      <div class="flex flex-row justify-between items-center py-8 relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="flex">
           <a href="/" target="_self">
             <svg class="h-8 w-28">
@@ -83,41 +83,14 @@
             </svg>
           </a>
         </div>
-        <div class="md:hidden">
-          <button id="openMenu" type="button" class="relative rounded-md p-2 inline-flex items-center justify-center text-white bg-gray-100 hover:bg-gray-300 -mt-2 transition-all">
-            <svg class="h-6 w-6 text-blue-700">
-              <use xlink:href="img/svgs/outline-menu.svg#outline-menu"></use>
-            </svg>
-          </button>
-        </div>
-        <nav class="hidden md:flex space-x-8 justify-self-center">
-          <a href="buyers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">Buyers</a>
-          <a href="sellers" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition">Sellers</a>
-        </nav>
-        <div class="hidden md:inline justify-self-end">
-           <a href="https://lombardstandard.com/contact" target="_self" class="relative text-gray-400 inline-flex items-center text-base font-medium hover:text-blue-700 focus:outline-none transition mr-4">Become a seller</a>
-          <a href="https://app.lombardstandard.com/userarea/" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 cursor-pointer px-3 py-2 hover:bg-blue-700 hover:text-white uppercase">Log in
+        <div class="flex">
+          <a href="https://app.lombardstandard.com/userarea/" class="tracking-tight transition-all rounded-lg text-sm font-extrabold text-blue-700 border border-blue-700 cursor-pointer px-3 py-2 hover:bg-blue-700 hover:text-white uppercase bg-white">Log in
           </a>
-        </div>
-      </div>
-      <!-- Mobile menu -->
-      <div id="mobileMenu" class="md:hidden opacity-0 absolute top-0 inset-x-0 transition transform origin-top-right pointer-events-none px-4 sm:px-8 md:px-12 mt-20 pb-2 pt-2 bg-transparent">
-        <div class="rounded-xl bg-gray-100 overflow-hidden max-w-full md:max-w-5xl lg:max-w-7xl mx-auto ">
-          <div class="p-6">
-            <nav class="grid grid-cols-1 gap-6 place-items-center">
-              <a href="buyers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Buyers
-              </a>
-              <a href="sellers" target="_self" class="p-3 rounded-lg bg-white hover:text-blue-700 transition-all w-full text-center font-medium text-base text-gray-400 ">Sellers
-              </a>
-              <a href="https://app.lombardstandard.com/userarea/" class="p-3 rounded-lg bg-blue-700 cursor-pointer hover:bg-blue-800 transition-all tracking-tight transition-all text-sm font-extrabold text-white uppercase text-center w-full opacity-1">Log in </a>
-              <a href="https://lombardstandard.com/contact" target="_self" class="p-3 rounded-lg bg-gray-300 hover:bg-gray-400 transition-all tracking-tight transition-all text-sm font-extrabold text-gray-900 box-border uppercase text-center w-full opacity-1">Become a seller</a>
-            </nav>
-          </div>
         </div>
       </div>
     </div>
     <!-- Hero -->
-    <div class="py-16 px-4 sm:px-8 md:px-12">
+    <div class="py-16 px-4 sm:px-8 md:px-12 bg-gray-50">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="relative py-24 px-12 bg-white rounded-xl overflow-hidden lg:px-16 ">
           <div class="absolute inset-0 ">
@@ -134,19 +107,16 @@
       </div>
     </div>
     <!-- Tabs -->
-    <div class="pt-16 pb-16 px-4 sm:px-8 md:px-12 ">
+    <div class="pt-16 pb-16 px-4 sm:px-8 md:px-12 bg-gray-50">
       <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
         <div class="tab flex sm:flex-row sm:space-x-6 pb-2 justify-start flex-col space-y-4 space-x-0 sm:space-y-0 border-b border-gray-300 ">
-          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Privacy')" id="openPrivacy">Privacy Policy</button>
-          <button class="tablinks font-extrabold text-gray-400 text-left" onclick="openTab(event, 'Terms')" id="openTerms">Terms of Service</button>
+          <button class="tablinks font-bold text-gray-400 text-left" onclick="openTab(event, 'Privacy')" id="openPrivacy">Privacy Policy</button>
+          <button class="tablinks font-bold text-gray-400 text-left" onclick="openTab(event, 'Terms')" id="openTerms">Terms of Service</button>
         </div>
         <div>
-          <div id="Privacy" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-gray-100 text-gray-900 taext-sm">
-            <div id="copyPrivacy" class="text-sm font-bold font-mono text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1">
-              <svg class="h-5 w-5 mr-2 text-white inline self-center">
-                <use xlink:href="img/svgs/solid-clipboard.svg#solid-clipboard"></use>
-              </svg>
-              copy
+          <div id="Privacy" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-white shadow-md text-gray-900 text-sm">
+            <div id="copyPrivacy" class="text-sm text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1">
+              COPY
             </div>
             <br><br>
             <div class="text-center font-bold text-xl mt-4 ">Privacy Policy</div>
@@ -222,20 +192,11 @@
             <br>
             <div class="font-bold">9. Contacts</div>
             <br>
-            We welcome your comments or questions about this Policy. Please use the <a href="#" target="_blank" class="text-blue-700 hover:text-blue-900">Contact Page</a> or contact us in writing at: <br><br>
-            <ul class="pl-4 list-none">
-              <li class="font-bold">Lombard Standard Ltd</li>
-              <li>Kemp House 160 City Road</li>
-              <li>EC1V 2NX London, United Kingdom</li>
-              <li><a href="mailto:info@lomb.st" class="text-blue-700 hover:text-blue-900 ">info@lomb.st</a></li>
-            </ul>
+            We welcome your comments or questions about this Policy, please use the <a href="#" target="_blank" class="text-blue-700 hover:text-blue-900">Contact Page</a> to send us a message.
           </div>
-          <div id="Terms" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-gray-100 text-gray-900 taext-sm">
-            <div id="copyTerms" class="text-sm font-bold font-mono text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 ">
-              <svg class="h-5 w-5 mr-2 text-white inline self-center">
-                <use xlink:href="img/svgs/solid-clipboard.svg#solid-clipboard"></use>
-              </svg>
-              copy
+          <div id="Terms" class="tabcontent mt-8 rounded-xl p-6 sm:p-12 bg-white shadow-md text-gray-900 taext-sm">
+            <div id="copyTerms" class="text-sm text-white hover:bg-blue-800 text-right cursor-pointer rounded-md transition-all float-right bg-blue-700 mx-auto px-3 py-1 ">
+              COPY
             </div>
             <br><br>
             <div class="text-center font-bold text-xl mt-4 ">Terms of Service</div>
@@ -309,79 +270,10 @@
       </div>
     </div>
     <!-- Footer -->
-    <footer class="pt-16 pb-6 px-4 sm:px-8 md:px-12">
-      <div class="relative border-t border-gray-300 max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
-        <div class="my-16 md:my-12 md:grid md:grid-cols-2 md:gap-8 ">
-          <div class="col-span-1 pb-12 md:pb-8">
-            <div class="flex">
-              <a href="/" target="_self">
-                <svg class="h-8 w-28">
-                  <use xlink:href="img/svgs/icon-lombst.svg#logo-ls-dark"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-span-1">
-            <div class="grid grid-cols-2 gap-8 sm:grid sm:grid-cols-2 sm:gap-8">
-              <div>
-                <ul class="mt-4 space-y-4 transition-all text-base text-gray-400 ">
-                  <li>
-                    <a href="buyers" target="_self" class="hover:text-blue-700">
-                    Buyers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="sellers" target="_self" class="hover:text-blue-700">
-                    Sellers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about-us" target="_self" class="hover:text-blue-700">
-                    About us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <ul class="mt-4 space-y-4 text-gray-400 text-base transition-all">
-                  <li>
-                    <a href="https://app.lombardstandard.com/" target="_self" class="hover:text-blue-700 ">
-                    Marketplace
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="cursor-default items-center flex">News <span class="ml-2 rounded-full px-2 py-0.5 text-center text-xs font-bold text-yellow-700 align-middle border border-yellow-700 ">soon</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact" target="_self" class="hover:text-blue-700">
-                    Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 pt-8 md:flex md:items-center md:justify-between">
-          <div class="flex space-x-6 md:order-2">
-            <a href="https://linkedin.com/company/lombard-standard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-linkedin.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-            <a href="https://twitter.com/lombardstandard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-twitter.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a href="https://github.com/LombardStandard" target="_blank">
-              <svg class="h-6 w-6 text-gray-400 hover:text-blue-700 transition-all">
-                <use xlink:href="img/svgs/icon-github.svg#icon-github"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="flex sm:flex-row flex-col space-y-2 space-x-0 sm:space-y-0 sm:space-x-3 mt-8 md:mt-0 cursor-default md:order-1 text-gray-400 text-xs">
+    <footer class="pb-6 px-4 sm:px-8 md:px-12 border-t border-gray-300 bg-gray-50">
+      <div class="relative max-w-full md:max-w-5xl lg:max-w-7xl mx-auto">
+        <div class="md:flex md:items-center md:justify-between">
+          <div class="flex sm:flex-row flex-col space-y-2 space-x-0 sm:space-y-0 sm:space-x-3 mt-6 cursor-default text-gray-400 text-xs">
             <p>&copy; <span id=copyright></span> Lombard Standard</p>
             <p class="hidden sm:block">|</p>
             <a href="https://rics.org/" target="_blank" class="inline-flex items-center hover:text-blue-700 cursor-pointer transition-all h-4">
